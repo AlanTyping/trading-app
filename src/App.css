@@ -17,7 +17,7 @@ input[type=number] {
   height: 60vh;
   overflow-y: auto;
 }
-
+/* 
 @media (max-width: 2000px) {
   .chart {
     min-height: 400px;
@@ -28,17 +28,11 @@ input[type=number] {
   .chart {
     height: 500px;
   }
-}
-
-@media (max-width: 1200px) {
-  .chart {
-    height: 470px;
-  }
-}
+}*/
 
 @media (max-width: 900px) {
   .chart {
-    height: 380px;
+    height: 170px;
   }
 
   .chart-options {
@@ -48,11 +42,16 @@ input[type=number] {
   #chart-form-container {
     width: 80%;
   }
-}
+} 
+
 
 @media (min-width: 600px) {
   .chart-input {
     width: 100px;
+  }
+
+  .chart {
+    height: 300px;
   }
 
   .chart-submit {
@@ -81,10 +80,6 @@ input[type=number] {
 
   .form {
     height: 10vh;
-  }
-
-  .chart {
-    height: 200px;
   }
 
   .header {
