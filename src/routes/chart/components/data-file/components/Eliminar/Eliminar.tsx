@@ -23,7 +23,7 @@ export default function Eliminar() {
 
   return (
     <div className='w-[100%] flex flex-col items-center justify-center z-2 absolute inset-x-0 top-[-5rem] bottom-28'>
-      <div className='flex w-[60%] min-w-[300px] h-[30%] flex-col bg-gray-900 justify-center items-center'>
+      <div className='flex w-[60%] min-w-[300px] min-h-[140px] h-[30%] flex-col bg-gray-900 justify-center items-center'>
         <div className='h-[50%] w-[100%] flex items-start justify-center p-6'>
           <p className='text-center'>Do you want to delete the last file in the list?</p>
         </div>
