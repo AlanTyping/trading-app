@@ -46,7 +46,7 @@ const LinesChart = (): JSX.Element => {
                 label: 'Capital',
                 data: chart.map(e => e.capital),
                 tension: 0.1,
-                borderColor: '#00a2ff',
+                borderColor: '#2563eb',
                 pointRadius: 5,
             },
         ],
