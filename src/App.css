@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.file-container {
+  height: 60vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 2000px) {
+  .chart {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .chart {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .chart {
+    height: 470px;
+  }
+}
+
+@media (max-width: 900px) {
+  .chart {
+    height: 380px;
+  }
+
+  .chart-options {
+    height: 60%;
+  }
+
+  #chart-form-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .chart-input {
+    width: 100px;
+  }
+
+  .chart-submit {
+    width: 100px;
+  }
+
+  #chart-form-container {
+    height: 150px;
+  }
+
+  #chart-form-container input {
+    height: 40px;
+    width: 200px;
+    font-size: 1rem;
+    color: lightgreen;
+  }
+
+  #chart-form-container button {
+    width: 250px;
+  }
+
+  #data-push {
+    max-height: 40px;
+    min-width: 120px;
+  }
+
+  .form {
+    height: 10vh;
+  }
+
+  .chart {
+    height: 200px;
+  }
+
+  .header {
+    height: 60px;
+  }
+}

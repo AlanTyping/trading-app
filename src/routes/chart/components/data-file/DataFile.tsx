@@ -1,0 +1,38 @@
+import { className } from '../../className/className';
+import EliminarDecision from './components/Eliminar/EliminarDecision';
+import { chartStore } from '../../../../zustand/chartStore';
+
+
+interface Prop {
+  capital: number,
+  number: number,
+  percentage: number,
+  date: string,
+  dolar: number,
+  i: number
+}
+
+export default function DataFile({ capital, number, percentage, date, dolar, i }: Prop) {
+  const chart = chartStore((item) => item.files);
+
+  return (
+    <>
+      <div className='w-[100%] bg-[#041333] h-[50px] relative border-b-[2px] border-[#122484] flex items-center justify-center justify-evenly'>
+        <p className={`${className} ${Math.sign(capital) === 1 ? `text-green-600` : Math.sign(capital) === 0 ? `` : `text-[orange]`}`}>
+          {Math.sign(capital) === 1 ? `$${capital}` : Math.sign(capital) === 0 ? `$${capital}` : `-$${Math.abs(capital)}`}
+        </p>
+        <p className={`${className} ${Math.sign(dolar) === 1 ? `text-[#00afff]` : `text-[orange]`}`}>
+          {Math.sign(dolar) === 1 ? `+$${dolar}` : `-$${Math.abs(dolar)}`}
+        </p>
+        <p className={`${className} ${Math.sign(percentage) === 1 ? `text-[#00afff]` : `text-[orange]`}`}>
+          {Math.sign(percentage) === 1 ? `+${percentage}%` : `-${Math.abs(percentage)}%`}
+        </p>
+        <p className={`${className}`}>{date}</p>
+        <p className={`${className}`}>N° {number}</p>
+      </div>
+      {i === (chart.length - 1) ? (
+        <EliminarDecision number={number} />
+      ) : ''}
+    </>
+  )
+}

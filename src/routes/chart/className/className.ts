@@ -1,0 +1,1 @@
+export const className: string = 'w-[20%] h-full flex items-center justify-center'
