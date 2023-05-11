@@ -33,13 +33,9 @@ input[type=number] {
 } 
 
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .chart-input {
     width: 100px;
-  }
-
-  .chart {
-    height: 300px;
   }
 
   .chart-submit {
@@ -52,13 +48,7 @@ input[type=number] {
 
   #chart-form-container input {
     height: 40px;
-    width: 200px;
     font-size: 1rem;
-    color: lightgreen;
-  }
-
-  #chart-form-container button {
-    width: 250px;
   }
 
   #data-push {
