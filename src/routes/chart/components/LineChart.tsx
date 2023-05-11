@@ -43,7 +43,7 @@ const LinesChart = (): JSX.Element => {
         labels: chart.map(a => a.number),
         datasets: [
             {
-                label: 'Beneficios',
+                label: 'Capital',
                 data: chart.map(e => e.capital),
                 tension: 0.1,
                 borderColor: '#00a2ff',
@@ -54,7 +54,7 @@ const LinesChart = (): JSX.Element => {
 
 
     return (
-        <div className='w-[100%] h-[270px] flex justify-center chart'>
+        <div className='w-[100%] h-[170px] flex justify-center chart'>
             <Line data={midata} options={misoptions} />
         </div>
     )

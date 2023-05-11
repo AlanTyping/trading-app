@@ -17,33 +17,6 @@ input[type=number] {
   height: 60vh;
   overflow-y: auto;
 }
-/* 
-@media (max-width: 2000px) {
-  .chart {
-    min-height: 400px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .chart {
-    height: 500px;
-  }
-}*/
-
-@media (max-width: 900px) {
-  .chart {
-    height: 170px;
-  }
-
-  .chart-options {
-    height: 60%;
-  }
-
-  #chart-form-container {
-    width: 80%;
-  }
-} 
-
 
 @media (min-width: 600px) {
   .chart-input {
