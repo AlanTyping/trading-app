@@ -1,5 +1,4 @@
 import DataFile from './data-file/DataFile';
-import { useAppSelector, useAppDispatch } from '../../../redux/hooks';
 import { className } from '../className/className';
 import Eliminar from './data-file/components/Eliminar/Eliminar';
 import { deleteFileDecision } from '../../../zustand/deleteFileDecision';

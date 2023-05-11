@@ -1,15 +1,10 @@
 import Form from './Form'
 import Form2 from './Form2'
-import { useAppSelector, useAppDispatch } from '../../../../redux/hooks'
-import { addFile } from '../../../../redux/slices/Files-slice';
-import { File } from '../../interface';
-import { stringify } from 'querystring';
 import { useEffect, useState } from 'react';
 import { chartStore } from '../../../../zustand/chartStore';
 
 
 export default function FormChange() {
-    const dispatch = useAppDispatch()
     const chart = chartStore(item => item.files);
     const setChart = chartStore(item => item.addFiles);
 

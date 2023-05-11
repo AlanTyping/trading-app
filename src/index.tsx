@@ -5,8 +5,6 @@ import Home from './Home';
 import Chart from './routes/chart/Chart';
 import Social from './routes/social/Social';
 import ErrorPage from './error-page';
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
 
 const router = createBrowserRouter([
   {
@@ -30,9 +28,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <Provider store={store}>
-       <RouterProvider router={router} />
-    </Provider>
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
