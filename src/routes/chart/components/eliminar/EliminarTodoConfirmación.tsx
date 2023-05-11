@@ -22,7 +22,7 @@ export default function EliminarTodoConfirmación() {
   }
 
   return (
-    <div className='text-white flex flex-col items-center justify-center absolute inset-x-0 inset-y-0 bg-[#111827] z-[5]'>
+    <div className='text-white flex flex-col items-center justify-center min-h-[140px] absolute inset-x-0 inset-y-0 bg-[#111827] z-[5]'>
       <div className='h-[50%] w-[100%] flex items-center justify-center flex-col'>
         <p>Are you sure you want to delete all of the files?</p><br />
         <p>This action cannot be undone</p>
