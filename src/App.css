@@ -18,6 +18,12 @@ input[type=number] {
   overflow-y: auto;
 }
 
+@media (min-width: 1350px) {
+    .chart {
+      height: 460px;
+    }
+}
+
 @media (max-width: 900px) {
   .chart {
     height: 170px;
@@ -42,13 +48,17 @@ input[type=number] {
     width: 100px;
   }
 
+  .chart {
+    height: 170px;
+  }
+
   #chart-form-container {
     height: 150px;
   }
 
   #chart-form-container input {
     height: 40px;
-    width: 180px;
+    width: 100px;
     font-size: 1rem;
   }
 
@@ -63,5 +73,9 @@ input[type=number] {
 
   .header {
     height: 60px;
+  }
+
+  .chart-options {
+    height: 90px;
   }
 }

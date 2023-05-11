@@ -95,7 +95,7 @@ const Form = (): JSX.Element => {
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-gray-900 border-[orange] text-center'
             placeholder='-${input}' />
         </div>
-        <div className='chart-options h-full min-h-[80px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
+        <div className='chart-options h-[95px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
           <select name='select' id='chart-form-select' className='hover:cursor-pointer bg-gray-900 border-[1px] rounded-md border-blue-800
            text-white h-[40%] w-[73%] p-[5px] min-w-[40px]' defaultValue='porcentaje' onChange={(event) => setDecision(event.target.value)}>
             <option value='porcentaje' className='text-center'>%</option>
