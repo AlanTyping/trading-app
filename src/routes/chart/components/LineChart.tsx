@@ -54,7 +54,7 @@ const LinesChart = (): JSX.Element => {
 
 
     return (
-        <div className='w-[100%] flex justify-center chart'>
+        <div className='w-[100%] flex justify-center chart bg-[#071437]'>
             <Line data={midata} options={misoptions} />
         </div>
     )
