@@ -18,6 +18,21 @@ input[type=number] {
   overflow-y: auto;
 }
 
+@media (max-width: 900px) {
+  .chart {
+    height: 170px;
+  }
+
+  .chart-options {
+    height: 60%;
+  }
+
+  #chart-form-container {
+    width: 80%;
+  }
+} 
+
+
 @media (min-width: 600px) {
   .chart-input {
     width: 100px;
