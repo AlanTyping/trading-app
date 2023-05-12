@@ -14,7 +14,7 @@ input[type=number] {
 }
 
 #files-container {
-  height: 60vh;
+  height: 50vh;
   overflow-y: auto;
 }
 
@@ -42,6 +42,7 @@ input[type=number] {
 @media (max-width: 600px) {
   #data-container {
     width: 90%;
+    height: 56vh;
   }
 
   #files-container {
