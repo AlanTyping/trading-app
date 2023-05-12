@@ -84,8 +84,8 @@ const Form = (): JSX.Element => {
   }
 
   return (
-    <form className='w-full h-full min-h-[90px] form flex items-center justify-center relative 
-    border-r-[1px] border-l-[1px] border-r-blue-700 border-l-[orange]' id='chart-second-form'>
+    <form className='w-full h-[70%] min-h-[90px] form flex items-center justify-center relative 
+    border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
@@ -99,7 +99,7 @@ const Form = (): JSX.Element => {
             placeholder='-${input}' />
         </div>
         <div className='chart-options h-[95px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
-          <select name='select' id='chart-form-select' className='hover:cursor-pointer bg-gray-900 border-[1px] rounded-md border-blue-800
+          <select name='select' id='chart-form-select' className='hover:cursor-pointer bg-[#061333] border-[1px] rounded-md border-blue-800
            text-white h-[40%] w-[73%] p-[5px] min-w-[40px]' defaultValue='porcentaje' onChange={(event) => setDecision(event.target.value)}>
             <option value='porcentaje' className='text-center'>%</option>
             <option value='dolar' className='text-center'>$</option>
@@ -108,13 +108,13 @@ const Form = (): JSX.Element => {
         </div>
         <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]'>
           <button className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[40px] 
-          border-[1px] border-solid border-blue-600 hover:bg-blue-600'
+          border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'
             onClick={HandleProfit}>
             Submit profit
           </button>
           <input type='number' onChange={profitChange}
-            className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333]
-            border-blue-600 text-center'
+            className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
+            border-[#0050ff] text-center'
             placeholder='+${input}' />
         </div>
       </div>

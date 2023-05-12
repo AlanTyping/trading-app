@@ -9,17 +9,20 @@ export default function ChartFunctions() {
   const desactiveChartFunctions = chartFunctionsStore(item => item.deleteToFalse)
 
   return (
-    <div className='absolute inset-x-0 inset-y-0  bg-[rgba(0,0,0,0.8)] z-[3] flex items-start justify-center flex-col bg-gray-900 text-white'>
-      <button className='h-[20%] w-full flex items-center justify-center hover:cursor-pointer bg-blue-800' 
-      onClick={desactiveChartFunctions}>Come back</button>
-      <div className='flex items-start justify-center flex-row h-[80%] w-full'>
-        <div className='h-full w-[50%] bg-[#3c1313] flex items-center justify-center text-white flex-col'>
+    <div className='absolute inset-x-0 inset-y-0 bg-[#001542] z-[3] flex items-start justify-center flex-row text-white'>
+      <div id='chart-functions-buttons-container' className='flex items-center mt-[13px] justify-center justify-between w-[70%] h-full'>
+        <div className='h-full w-[50%] flex items-center justify-center text-white flex-col'>
           <EliminarTodoDecision />
         </div>
-        <div className='h-full w-[50%] bg-[#0f2257] flex items-center justify-center text-white flex-col'>
+        <div className='h-full w-[50%] flex items-center justify-center text-white flex-col'>
           <DataDownload />
         </div>
       </div>
+      <button
+        id='chart-functions-exit'
+        className='h-[30%] w-[12%] min-w-[70px] absolute left-4 rounded border-[1px] border-blue-600 top-2 flex items-center
+         justify-center hover:cursor-pointer hover:bg-[#0047e1] bg-[#002e93]'
+        onClick={desactiveChartFunctions}>Exit</button>
     </div>
   );
 }

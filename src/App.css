@@ -69,13 +69,14 @@ input[type=number] {
   #capital-form {
     height: 35px;
     width: 140px;
-    font-size: 0.90rem;
+    font-size: 1rem;
     position: absolute;
     bottom: 60px;
   }
  
   #chart-capital-push {
     position: absolute;
+    width: 120px;
     height: 30px;
     min-height: 20px;
     bottom: 15px;
@@ -101,6 +102,15 @@ input[type=number] {
 
   .chart-options {
     height: 90px;
+  }
+
+  #chart-functions-exit {
+    left: 8px;
+    top: 4px;
+  }
+
+  #chart-functions-buttons-container{
+    margin-top: 24px;
   }
 
   @media (max-height: 740px) {
