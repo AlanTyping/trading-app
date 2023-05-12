@@ -60,12 +60,19 @@ input[type=number] {
     height: 150px;
   }
 
-  #chart-form-container input {
+  #capital-form {
     height: 40px;
-    width: 130px;
+    width: 140px;
     font-size: 0.95rem;
+    position: absolute;
+    bottom: 65px;
   }
  
+  #chart-capital-push {
+    position: absolute;
+    bottom: 15px;
+  }
+
   #chart-second-form {
     width: 90vh;
   }

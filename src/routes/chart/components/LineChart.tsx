@@ -34,7 +34,7 @@ var misoptions = {
 
 
 
-const LinesChart = (): JSX.Element => {
+const LineChart = (): JSX.Element => {
 
     const chart = chartStore(item => item.files);
 
@@ -60,4 +60,4 @@ const LinesChart = (): JSX.Element => {
     )
 }
 
-export default LinesChart;
+export default LineChart;
