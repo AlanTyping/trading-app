@@ -19,7 +19,7 @@ const DataView = (): JSX.Element => {
         <p className={`${className}`}>Op</p>
       </div>
       <div className='w-full h-[auto] relative'>
-        <div className='file-container w-full bg-gray-800'>
+        <div className='file-container w-full bg-[#0047e1]'>
           {chart.map((e, i) => {
             if (e.number !== 0) return (
               <DataFile
