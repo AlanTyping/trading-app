@@ -13,7 +13,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.file-container {
+#files-container {
   height: 60vh;
   overflow-y: auto;
 }
@@ -42,6 +42,11 @@ input[type=number] {
 @media (max-width: 600px) {
   #data-container {
     width: 90%;
+  }
+
+  #files-container {
+    font-size: 0.95rem;
+    height: 40vh;
   }
 
   .chart-input {
