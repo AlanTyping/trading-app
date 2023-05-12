@@ -42,6 +42,6 @@ export default function DataPush() {
 
   return (
       <input type="file" id="myFileInput" onChange={handleUpload} accept="text/plain"
-        className='h-full w-full absolute top-0 bottom-0 right-0 left-0 opacity-[0] hover:cursor-pointer' />
+        className='h-full hover:bg-[#007480] w-full absolute top-0 bottom-0 right-0 left-0 opacity-[0] hover:cursor-pointer' />
   )
 }
