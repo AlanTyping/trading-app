@@ -46,7 +46,7 @@ input[type=number] {
 
   #files-container {
     font-size: 0.95rem;
-    height: 40vh;
+    height: 47vh;
   }
 
   .chart-input {
@@ -62,7 +62,7 @@ input[type=number] {
   }
 
   #chart-form-container {
-    height: 150px;
+    height: 120px;
   }
 
   #capital-form {
