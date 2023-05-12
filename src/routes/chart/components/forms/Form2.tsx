@@ -39,7 +39,7 @@ export default function Form2() {
       <div className='h-[25%] min-h-[30px] w-[20%] bg-[#004f57] hover:bg-[#007480] 
       bg-[#004d55] rounded flex justify-center items-center absolute top-0 right-2'
         id='data-push'>
-        <h4>Or attach data</h4>
+        <h4>Attach data</h4>
         <DataPush />
       </div>
     </form>

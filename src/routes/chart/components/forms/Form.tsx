@@ -84,7 +84,7 @@ const Form = (): JSX.Element => {
   }
 
   return (
-    <form className='w-full h-[17vh] min-h-[90px] form flex items-center justify-center relative 
+    <form className='w-full h-full min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-blue-700 border-l-[orange]' id='chart-second-form'>
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly
