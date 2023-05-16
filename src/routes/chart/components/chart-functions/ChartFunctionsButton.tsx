@@ -9,7 +9,7 @@ export default function ChartFunctionsButton() {
         (
           <div
             onClick={activateChartFunctions}
-            className='h-[40%] w-[73%] border-[1px] border-blue-800 flex items-center
+            className='h-[35%] w-full border-[1px] border-blue-800 flex items-center
                justify-center text-white hover:cursor-pointer rounded-md'>
             <SvgIcon />
           </div>

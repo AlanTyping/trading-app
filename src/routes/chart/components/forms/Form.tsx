@@ -6,16 +6,17 @@ import ChartFunctions from '../chart-functions/ChartFunctions';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
 import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
 import EliminarTodoConfirmación from '../eliminar/EliminarTodoConfirmación';
+import Switch from './components/Switch';
+import { summaryFileDecision } from '../../../../zustand/summaryDecision';
 
 const Form = (): JSX.Element => {
-  const percentageString = 'percentage'
-  const [decision, setDecision] = useState<string>(percentageString);
   const [loss, setLoss] = useState<number>(0);
   const [profit, setProfit] = useState<number>(0);
   let capital: number = 0;
   let dolar: number = 0;
   let percentage: number = 0;
   const deleteDecision = deleteAllFilesDecision(i => i.deleteDecision)
+  const decision = summaryFileDecision(i => i.summaryDecision);
 
   const chart = chartStore(item => item.files);
   const addFile = chartStore(item => item.addFile);
@@ -34,14 +35,14 @@ const Form = (): JSX.Element => {
   const HandleProfit = (e: any) => {
     e.preventDefault();
 
-    if (decision === percentageString) {
-      percentage = profit;
-      capital = getCapitalByPercentage(chart[chart.length - 1].capital, profit);
-      dolar = getDolar(chart[chart.length - 1].capital, profit);
-    } else {
-      dolar = profit;
+    if (!decision) {
+      dolar = Math.abs(profit);
       capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
       percentage = getPercentage(chart[chart.length - 1].capital, dolar);
+    } else {
+      percentage = Math.abs(profit);
+      capital = getCapitalByPercentage(chart[chart.length - 1].capital, profit);
+      dolar = getDolar(chart[chart.length - 1].capital, profit);
     }
 
     const file = {
@@ -60,14 +61,14 @@ const Form = (): JSX.Element => {
   const HandleLoss = (e: any) => {
     e.preventDefault();
 
-    if (decision === percentageString) {
+    if (!decision) {
+      dolar = (loss < 0 ? loss : -loss);
+      capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
+      percentage = getPercentage(chart[chart.length - 1].capital, dolar);
+    } else {
       percentage = -loss;
       capital = getCapitalByPercentage(chart[chart.length - 1].capital, percentage);
       dolar = getDolar(chart[chart.length - 1].capital, percentage);
-    } else {
-      dolar = -loss;
-      capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
-      percentage = getPercentage(chart[chart.length - 1].capital, dolar);
     }
 
     const file = {
@@ -96,14 +97,10 @@ const Form = (): JSX.Element => {
           </button>
           <input type='number' onChange={lossChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
-            placeholder='-${input}' />
+            placeholder={decision ? '-%{ input }' : '-${ input }'} />
         </div>
         <div className='chart-options h-[95px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
-          <select name='select' id='chart-form-select' className='hover:cursor-pointer bg-[#061333] border-[1px] rounded-md border-blue-800
-           text-white h-[40%] w-[73%] p-[5px] min-w-[40px]' defaultValue='porcentaje' onChange={(event) => setDecision(event.target.value)}>
-            <option value='porcentaje' className='text-center'>%</option>
-            <option value='dolar' className='text-center'>$</option>
-          </select>
+          <Switch />
           <ChartFunctionsButton />
         </div>
         <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]'>
@@ -115,7 +112,7 @@ const Form = (): JSX.Element => {
           <input type='number' onChange={profitChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
             border-[#0050ff] text-center'
-            placeholder='+${input}' />
+            placeholder={decision ? '+%{ input }' : '+${ input }'} />
         </div>
       </div>
       {chartOprionsAviable ? <ChartFunctions /> : ''}

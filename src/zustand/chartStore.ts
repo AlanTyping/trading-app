@@ -14,7 +14,7 @@ export const chartStore = create<storeInterface>((set) => ({
   addFile: (file: File) => set(state => ({
     files: [...state.files, file]
   })),
-  addFiles: (data: File[]) => set(state => ({files: data})),
-  removeFile: (data: File[]) => set(state => ({files: data})),
-  removeFiles: () => set(state => ({ files: [] }))
+  addFiles: (data: File[]) => set(() => ({files: data})),
+  removeFile: (data: File[]) => set(() => ({files: data})),
+  removeFiles: () => set(() => ({ files: [] }))
 }))
