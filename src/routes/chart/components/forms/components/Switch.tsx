@@ -4,7 +4,7 @@ export default function Switch() {
   const { summaryDecision, changeDecision } = summaryFileDecision()
 
   return (
-    <div className={`h-[30%] w-[100%] transition-all duration-200 rounded flex items-center relative hover:cursor-pointer 
+    <div className={`h-[30%] w-[100%] transition-all text-[1.15rem] duration-200 rounded flex items-center relative hover:cursor-pointer 
     ${summaryDecision ? 'bg-blue-600 right-0' : 'bg-green-600'}`}
     onClick={() => changeDecision(!summaryDecision)}>
         <div 
