@@ -88,32 +88,30 @@ const Form = (): JSX.Element => {
     <div className='w-full h-[70%] min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
-        <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly
+        <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
           <button className='chart-submit text-white w-[80%] rounded-md 
-          min-w-[120px] min-h-[40px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'
-            onClick={HandleLoss}>
+          min-w-[120px] min-h-[40px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
             Submit loss
           </button>
           <input type='number' onChange={lossChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'} />
-        </div>
+        </form>
         <div className='chart-options h-[95px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
           <Switch />
           <ChartFunctionsButton />
         </div>
-        <div className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]'>
+        <form className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
           <button className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[40px] 
-          border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'
-            onClick={HandleProfit}>
+          border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'>
             Submit profit
           </button>
           <input type='number' onChange={profitChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
             border-[#0050ff] text-center'
             placeholder={decision ? '+%{ input }' : '+${ input }'} />
-        </div>
+        </form>
       </div>
       {chartOprionsAviable ? <ChartFunctions /> : ''}
       {deleteDecision ? <EliminarTodoConfirmación /> : ''}
