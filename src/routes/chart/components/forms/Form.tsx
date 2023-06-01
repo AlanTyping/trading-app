@@ -8,6 +8,7 @@ import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecisi
 import EliminarTodoConfirmación from '../eliminar/EliminarTodoConfirmación';
 import Switch from './components/Switch';
 import { summaryFileDecision } from '../../../../zustand/summaryDecision';
+import { DesktopDatePicker} from '@mui/x-date-pickers';
 
 const Form = (): JSX.Element => {
   const [loss, setLoss] = useState<number>(0);
@@ -94,7 +95,7 @@ const Form = (): JSX.Element => {
           min-w-[120px] min-h-[40px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
             Submit loss
           </button>
-          <input type='number' onChange={lossChange}
+          <input step="any" type='number' onChange={lossChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'} />
         </form>
@@ -107,7 +108,7 @@ const Form = (): JSX.Element => {
           border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'>
             Submit profit
           </button>
-          <input type='number' onChange={profitChange}
+          <input step="any" type='number' onChange={profitChange}
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
             border-[#0050ff] text-center'
             placeholder={decision ? '+%{ input }' : '+${ input }'} />

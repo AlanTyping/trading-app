@@ -29,7 +29,7 @@ export default function Form2() {
   return (
     <form onSubmit={handleSubmit} className='w-full h-full bg-[#001440] flex items-center justify-center text-white relative flex-col border-r-[2px] border-l-[2px] border-[#0047e1]'>
       <div className='h-[100%] w-full flex items-center justify-center justify-evenly flex-row flex-col justify-evenly'>
-        <input id='capital-form' type='number' name='numberInput' onChange={handleInputChange}
+        <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
           className='bg-gray-900 border-[1px] border-[#0047e1] rounded text-center h-[30%] w-[30%] text-[105%]'
           placeholder='${ Initial Capital }' />
         <button

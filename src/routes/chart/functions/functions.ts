@@ -15,7 +15,8 @@ export const getDate = () => {
     const fecha = new Date();
     const day = fecha.getDate();
     const month = fecha.getMonth() + 1; // Sumamos 1 al mes porque los meses empiezan en 0
-    const fechaString = `${day}/${month}`;
+    const year = fecha.getFullYear()
+    const fechaString = `${day}/${month}/${year}`;
 
     return fechaString
 }

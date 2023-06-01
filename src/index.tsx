@@ -5,6 +5,8 @@ import Home from './Home';
 import Chart from './routes/chart/Chart';
 import Social from './routes/social/Social';
 import ErrorPage from './error-page';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,9 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <RouterProvider router={router} />
+  <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <RouterProvider router={router} />
+  </LocalizationProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
