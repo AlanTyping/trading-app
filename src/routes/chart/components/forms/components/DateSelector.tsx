@@ -3,6 +3,7 @@ import { StaticDatePicker } from "@mui/x-date-pickers";
 import { ThemeProvider, createTheme, Typography } from "@mui/material";
 import { transformExistingDate, getDate } from '../../../functions/functions';
 import { dateStore } from '../../../../../zustand/dateStore';
+import dayjs from 'dayjs';
 
 export default function DateSelector() {
     const { date, setDate } = dateStore();
@@ -29,11 +30,15 @@ export default function DateSelector() {
         },
     });
 
+    console.log(dayjs())
+    const today = dayjs();
+
     if (open) {
         return (
             <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-220%' }}>
                 <ThemeProvider theme={theme}>
                     <StaticDatePicker
+                        maxDate={today}
                         sx={{ backgroundColor: '#001548', borderRadius: '2rem' }}
                         onAccept={handleAccept}
                         onClose={handleClose}
