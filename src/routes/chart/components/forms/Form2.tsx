@@ -27,7 +27,7 @@ export default function Form2() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='w-full h-full flex items-center justify-center text-white relative flex-col border-r-[2px] border-l-[2px] border-[#0047e1]'>
+    <form onSubmit={handleSubmit} id='initial-form' className='w-full h-full flex items-center justify-center text-white relative flex-col border-r-[1px] border-l-[1px] border-[#0047e1]'>
       <div className='h-[100%] w-full flex items-center justify-center justify-evenly flex-row flex-col justify-evenly'>
         <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
           className='border-[1px] bg-[#061333] rounded border-[#0050ff] text-[#bfd3ff] text-center h-[30%] w-[30%] text-[1.1rem]'
@@ -37,10 +37,10 @@ export default function Form2() {
           className='min-w-[100px] w-[20%] h-[35%] min-h-[35px] 
           border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>Submit</button>
       </div>
-      <div className='h-[25%] min-h-[30px] w-[15%] bg-[#002e93] hover:bg-[#0047e1] rounded 
-      flex justify-center border-[1px] border-[#0047e1] items-center absolute top-0 right-2'
+      <div className='h-[25%] min-h-[30px] w-[15%] hover:rounded hover:bg-[#0047e1]
+      flex justify-center border-b-[1px] border-[#0047e1] items-center absolute top-[-25%] right-4'
         id='data-push'>
-        <h4>Attach data</h4>
+        <h4>Or Attach data</h4>
         <DataPush />
       </div>
     </form>

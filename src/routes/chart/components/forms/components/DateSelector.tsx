@@ -31,7 +31,7 @@ export default function DateSelector() {
 
     if (open) {
         return (
-            <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-250%' }}>
+            <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-270%' }}>
                 <ThemeProvider theme={theme}>
                     <StaticDatePicker
                         sx={{ backgroundColor: '#001548', borderRadius: '2rem' }}
@@ -40,15 +40,17 @@ export default function DateSelector() {
                     />
                 </ThemeProvider>
             </Typography>
-        ) 
+        )
     } else {
-            return (
-                <p
-                    onClick={() => setOpen(true)}
-                    className='absolute top-[-35%] hover:bg-blue-600 left-4 text-white text-[1.04rem] border-b-[1px] 
+        return (
+            <p
+                onClick={() => setOpen(true)}
+                id='date'
+                className='absolute top-[-35%] min-w-[60px] hover:bg-blue-600 left-5 text-white text-[1.04rem] border-b-[1px] 
                     border-blue-600 hover:cursor-pointer w-[8%] text-center hover:rounded'>
-                    {date.slice(0, -5)}
-                </p>
-            )
+                {date.slice(0, -5)}
+            </p>
+        )
     }
+
 }

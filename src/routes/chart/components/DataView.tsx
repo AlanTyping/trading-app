@@ -17,7 +17,7 @@ const DataView = (): JSX.Element => {
         <p className={`${className}`}>$</p>
         <p className={`${className}`}>%</p>
         <div className={`${className}`}>
-          <p className='relative'> Date <EditSvg /></p>
+          <p className='relative'>Date</p>
         </div>
         <p className={`${className} mr-[5px]`}>Op</p>
       </div>

@@ -83,13 +83,19 @@ input[type=number] {
   }
 
   #chart-second-form {
-    width: 90vh;
+    width: 96vw;
   }
 
   #data-push {
-    max-height: 30px;
-    width: 70px;
+    height: 22px;
+    min-height: 20px;
+    width: 80px;
     font-size: 0.7rem;
+    top: -15px;
+  }
+
+  #initial-form {
+    width: 95%;
   }
 
   .form {
