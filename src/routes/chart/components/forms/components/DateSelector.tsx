@@ -31,7 +31,7 @@ export default function DateSelector() {
 
     if (open) {
         return (
-            <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-160%' }}>
+            <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-220%' }}>
                 <ThemeProvider theme={theme}>
                     <StaticDatePicker
                         sx={{ backgroundColor: '#001548', borderRadius: '2rem' }}

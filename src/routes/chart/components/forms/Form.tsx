@@ -95,7 +95,7 @@ const Form = (): JSX.Element => {
         <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
           <button className='chart-submit text-white w-[80%] rounded-md 
-          min-w-[120px] min-h-[40px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
+          min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
             Submit loss
           </button>
           <input step="any" type='number' onChange={lossChange}
@@ -107,7 +107,7 @@ const Form = (): JSX.Element => {
           <ChartFunctionsButton />
         </div>
         <form className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
-          <button className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[40px] 
+          <button className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[38px] 
           border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'>
             Submit profit
           </button>
