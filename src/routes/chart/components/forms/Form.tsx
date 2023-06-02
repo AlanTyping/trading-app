@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { getDolar, getPercentage, getDate, changeTrade, getCapitalByPercentage, getCapitalByDolar } from '../../functions/functions';
 import { chartStore } from '../../../../zustand/chartStore';
-import ChartFunctionsButton from '../chart-functions/ChartFunctionsButton';
 import ChartFunctions from '../chart-functions/ChartFunctions';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
 import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
 import EliminarTodoConfirmación from '../eliminar/EliminarTodoConfirmación';
 import Switch from './components/Switch';
 import { summaryFileDecision } from '../../../../zustand/summaryDecision';
-import { DesktopDatePicker} from '@mui/x-date-pickers';
+import DateSelector from './components/DateSelector';
+import { dateStore } from '../../../../zustand/dateStore';
+import ChartFunctionsButton from '../chart-functions/ChartFunctionsButton';
 
 const Form = (): JSX.Element => {
+  const { date, setDate } = dateStore();
   const [loss, setLoss] = useState<number>(0);
   const [profit, setProfit] = useState<number>(0);
   let capital: number = 0;
@@ -51,7 +53,7 @@ const Form = (): JSX.Element => {
       percentage: percentage,
       dolar: dolar,
       number: chart[chart.length - 1].number + 1,
-      date: getDate()
+      date: date
     }
 
     addFile(file);
@@ -77,7 +79,7 @@ const Form = (): JSX.Element => {
       percentage: percentage,
       dolar: dolar,
       number: chart[chart.length - 1].number + 1,
-      date: getDate()
+      date: date
     }
 
     addFile(file);
@@ -88,6 +90,7 @@ const Form = (): JSX.Element => {
   return (
     <div className='w-full h-[70%] min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
+      <DateSelector />
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
@@ -99,7 +102,7 @@ const Form = (): JSX.Element => {
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'} />
         </form>
-        <div className='chart-options h-[95px] w-[15%] min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
+        <div className='chart-options h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center flex-col justify-evenly'>
           <Switch />
           <ChartFunctionsButton />
         </div>

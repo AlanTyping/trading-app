@@ -22,7 +22,7 @@ export default function FormChange() {
     return (
         <div 
         id='chart-form-container'
-        className='h-[17vh] min-h-[100px] flex items-center justify-center justify-evenly flex-row w-[60%] min-w-[360px]'>
+        className='h-[17vh] min-h-[100px] flex items-center justify-center mt-[2.5%] justify-evenly flex-row w-[60%] min-w-[360px]'>
             {chart.length >= 1 ? <Form /> : <Form2 />}
         </div>
     )

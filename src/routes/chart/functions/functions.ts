@@ -21,6 +21,15 @@ export const getDate = () => {
     return fechaString
 }
 
+export const transformExistingDate = (date: Date) => {
+    const day = date.getDate();
+    const month = date.getMonth() + 1; // Sumamos 1 al mes porque los meses empiezan en 0
+    const year = date.getFullYear()
+    const dateString = `${day}/${month}/${year}`;
+
+    return dateString
+}
+
 // Obtener n° de trade
 
 export const changeTrade = (trade: number): number => {
