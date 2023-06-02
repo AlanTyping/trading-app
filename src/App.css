@@ -86,12 +86,17 @@ input[type=number] {
     width: 96vw;
   }
 
+  #date-selector {
+    top: -70%;
+  }
+
   #data-push {
     height: 22px;
     min-height: 20px;
     width: 80px;
     font-size: 0.7rem;
     top: -15px;
+    right: 10px;
   }
 
   #initial-form {
