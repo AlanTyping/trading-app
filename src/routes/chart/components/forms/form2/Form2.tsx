@@ -30,11 +30,11 @@ export default function Form2() {
 
   return (
     <form onSubmit={handleSubmit} id='initial-form' className='w-full h-full flex items-center justify-center text-white relative flex-col border-r-[1px] border-l-[1px] border-[#0047e1]'>
-      <div className='absolute flex top-[-16%] justify-evenly left-[2%] h-[30%] si items-center flex-row justify-center'>
-        <p>capital date:</p>
+      <div className='absolute flex top-[-16%] justify-evenly left-[4%] h-[30%] si items-center flex-row justify-center'>
+        <p className='montserrat'>capital date:</p>
         <DateDisplay
           Class={
-            'h-[80%] w-[28%] ml-[10%] second-form-date hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
+            'h-[80%] w-[35%] ml-[10%] montserrat second-form-date hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
           } />
       </div>
 
@@ -47,10 +47,10 @@ export default function Form2() {
           className='min-w-[100px] w-[20%] h-[35%] min-h-[35px] 
           border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>Submit</button>
       </div>
-      <div className='h-[25%] min-h-[30px] w-[15%] hover:rounded hover:bg-[#0047e1]
-      flex justify-center border-b-[1px] border-[#0047e1] items-center absolute top-[-25%] right-4'
+      <div className='h-[23%] min-h-[25px] w-[17%] hover:rounded hover:bg-[#0047e1]
+      flex justify-center border-b-[1px] montserrat border-[#0047e1] items-center absolute top-[-25%] right-4'
         id='data-push'>
-        <h4>Or Attach data</h4>
+        <h4 className='text-[0.7rem]'>Or Attach data</h4>
         <DataPush />
       </div>
     </form>
