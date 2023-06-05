@@ -14,7 +14,8 @@ import "./styles.css";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 
-export default function Carousel() {
+export default function Carousel() {  
+
   return (
     <>
       <Swiper
@@ -29,7 +30,10 @@ export default function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <DateDisplay />
+          <DateDisplay
+            Class={
+              'carousel-date w-[45%] h-[140%] hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
+            } />
         </SwiperSlide>
         <SwiperSlide>
           <Switch />

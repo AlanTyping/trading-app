@@ -40,8 +40,6 @@ input[type=number] {
 
 
 @media (max-width: 600px) {
-  #date {
-  }
 
   #data-container {
     width: 90%;
