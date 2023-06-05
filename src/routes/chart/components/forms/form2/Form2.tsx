@@ -30,11 +30,11 @@ export default function Form2() {
 
   return (
     <form onSubmit={handleSubmit} id='initial-form' className='w-full h-full flex items-center justify-center text-white relative flex-col border-r-[1px] border-l-[1px] border-[#0047e1]'>
-      <div className='si absolute flex top-[-16%] justify-evenly left-[2%] h-[30%] w-[20%] items-center flex-row justify-center'>
-        <p>Capital date:</p>
+      <div className='absolute flex top-[-16%] justify-evenly left-[2%] h-[30%] si items-center flex-row justify-center'>
+        <p>capital date:</p>
         <DateDisplay
           Class={
-            'h-[80%] w-[28%] second-form-date hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
+            'h-[80%] w-[28%] ml-[10%] second-form-date hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
           } />
       </div>
 

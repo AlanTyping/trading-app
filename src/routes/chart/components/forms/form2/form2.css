@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+p, h4 {
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+
 @media (max-width: 600px) {
     #second-form-date {
 
     }
 
-    p {
-        white-space: nowrap;
-    }
-
     .si {
-        width: 50%;
+        width: 40%;
     }
 }
