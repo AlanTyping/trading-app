@@ -3,6 +3,10 @@
 
     }
 
+    p {
+        white-space: nowrap;
+    }
+
     .si {
         width: 50%;
     }
