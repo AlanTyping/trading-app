@@ -57,9 +57,6 @@ export default function Carousel() {
         <SwiperSlide>
           <ChartFunctionsButton />
         </SwiperSlide>
-        <SwiperSlide>
-
-        </SwiperSlide>
       </Swiper>
     </>
   );
