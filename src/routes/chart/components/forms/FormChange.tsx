@@ -3,7 +3,7 @@ import Form2 from './form2/Form2'
 import { useEffect, useState } from 'react';
 import { chartStore } from '../../../../zustand/chartStore';
 import { dateStore } from '../../../../zustand/dateStore';
-import DateSelector from './components/DateSelector';
+import DateSelector from './components/date-selector/DateSelector';
 
 
 export default function FormChange() {

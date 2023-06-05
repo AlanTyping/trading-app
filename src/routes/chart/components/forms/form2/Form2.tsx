@@ -32,7 +32,7 @@ export default function Form2() {
 
   return (
     <form onSubmit={handleSubmit} id='initial-form' className='w-full h-full rounded flex items-center justify-center text-white relative flex-col border-r-[1px] border-l-[1px] border-[#0047e1]'>
-      <div id='first-form-container' className='first-form-container absolute bottom-0 w-[40%] h-[370%] bg-[#00113c] border-[1px] border-blue-600 flex flex-col justify-center items-center'>
+      <div id='first-form-container' className='first-form-container absolute bottom-0 w-[40%] h-[370%] bg-[#00113c] border-[1px] border-blue-600 rounded-[1em] flex flex-col justify-center items-center'>
 
         <div className='h-[15%] w-full flex justify-end items-center'>
           <div className='h-[50%] w-[30%] mr-[3%] bg-blue-600 hover:rounded hover:bg-[#0047e1]

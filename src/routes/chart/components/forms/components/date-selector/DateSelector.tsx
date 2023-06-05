@@ -1,8 +1,9 @@
 import { StaticDatePicker } from "@mui/x-date-pickers";
 import { ThemeProvider, createTheme, Typography } from "@mui/material";
-import { transformExistingDate } from '../../../functions/functions';
-import { dateStore } from '../../../../../zustand/dateStore';
+import { transformExistingDate } from '../../../../functions/functions';
+import { dateStore } from '../../../../../../zustand/dateStore';
 import dayjs from 'dayjs';
+import './date.css'
 
 export default function DateSelector() {
     const { date, setDate, dateState, changeDateState } = dateStore();
@@ -29,12 +30,12 @@ export default function DateSelector() {
 
     if (dateState) {
         return (
-            <div className='absolute flex items-center justify-center z-[4]' >
+            <div id="date-selector" className='absolute flex items-center justify-center z-[4] bottom-0' >
                 <Typography style={{ color: '#ffa500', zIndex: 400}}>
                     <ThemeProvider theme={theme}>
                         <StaticDatePicker
                             maxDate={today}
-                            sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '1px solid orange' }}
+                            sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '2px solid orange' }}
                             onAccept={handleAccept}
                             onClose={changeDateStateFunction}
                         />
