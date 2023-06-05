@@ -29,7 +29,7 @@ export default function DateSelector() {
 
     if (dateState) {
         return (
-            <div className='absolute flex items-center justify-center z-[4] top-[-20%]' >
+            <div className='absolute flex items-center justify-center z-[4]' >
                 <Typography style={{ color: '#ffa500', zIndex: 400}}>
                     <ThemeProvider theme={theme}>
                         <StaticDatePicker
