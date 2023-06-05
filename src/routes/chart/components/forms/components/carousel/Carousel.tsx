@@ -23,11 +23,27 @@ export default function Carousel() {
         slidesPerView={2}
         spaceBetween={30}
         mousewheel={true}
+        loop={true}
         pagination={{
           clickable: true,
         }}
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
+        onInit={(swiper) => {
+          // Escalar el elemento central al tamaño deseado
+          const middleSlide = swiper.slides[swiper.activeIndex];
+          middleSlide.style.transform = 'scale(1.2)'; // Ajusta el valor según tus necesidades
+        }}
+        onSlideChange={(swiper) => {
+          // Restaurar el tamaño de los demás elementos
+          swiper.slides.forEach((slide) => {
+            slide.style.transform = 'scale(1)';
+          });
+  
+          // Escalar el nuevo elemento central al tamaño deseado
+          const middleSlide = swiper.slides[swiper.activeIndex];
+          middleSlide.style.transform = 'scale(1.2)'; // Ajusta el valor según tus necesidades
+        }}
       >
         <SwiperSlide>
           <DateDisplay
@@ -40,6 +56,9 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <ChartFunctionsButton />
+        </SwiperSlide>
+        <SwiperSlide>
+
         </SwiperSlide>
       </Swiper>
     </>
