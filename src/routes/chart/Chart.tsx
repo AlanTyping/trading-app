@@ -1,7 +1,6 @@
 import LineChart from "./components/LineChart";
 import DataView from "./components/DataView";
 import FormChange from './components/forms/FormChange';
-import Header from "../../components/Header";
 import '../../App.css';
 
 export default function Chart() {

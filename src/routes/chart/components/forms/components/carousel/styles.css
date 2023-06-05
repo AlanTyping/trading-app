@@ -1,0 +1,36 @@
+  
+  .swiper {
+    position: absolute;
+    width: 200%;
+    height: 90%;
+    padding: 15%;
+    border-radius: 10%;
+  }
+
+  .swiper-pagination span {
+    background-color: #2563eb;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    .swiper {
+      width: 220% ;
+    }
+
+    #chart-functions-button {
+      width: 57%;
+    }
+
+    #date {
+      width: 54%;
+    }
+  }

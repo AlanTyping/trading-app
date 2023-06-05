@@ -1,24 +1,19 @@
-import { useState, useEffect } from 'react';
 import { StaticDatePicker } from "@mui/x-date-pickers";
 import { ThemeProvider, createTheme, Typography } from "@mui/material";
-import { transformExistingDate, getDate } from '../../../functions/functions';
+import { transformExistingDate } from '../../../functions/functions';
 import { dateStore } from '../../../../../zustand/dateStore';
 import dayjs from 'dayjs';
 
 export default function DateSelector() {
-    const { date, setDate } = dateStore();
-    const [selectedDate, setSelectedDate] = useState<any>(null);
-    const [open, setOpen] = useState(false);
+    const { date, setDate, dateState, changeDateState } = dateStore();
 
     const handleAccept = (date: any) => {
-        if (date) {
-            setOpen(false);
-            setDate(transformExistingDate(date.$d));
-        }
+        setDate(transformExistingDate(date.$d));
+        changeDateState(false);
     };
 
-    const handleClose = () => {
-        setOpen(false);
+    const changeDateStateFunction = () => {
+        changeDateState(false);
     };
 
     const theme = createTheme({
@@ -30,32 +25,28 @@ export default function DateSelector() {
         },
     });
 
-    console.log(dayjs())
     const today = dayjs();
 
-    if (open) {
+    if (dateState) {
         return (
-            <Typography style={{ color: '#ffa500', zIndex: 400, position: 'absolute', top: '-220%' }}>
-                <ThemeProvider theme={theme}>
-                    <StaticDatePicker
-                        maxDate={today}
-                        sx={{ backgroundColor: '#001548', borderRadius: '2rem' }}
-                        onAccept={handleAccept}
-                        onClose={handleClose}
-                    />
-                </ThemeProvider>
-            </Typography>
+            <div className='absolute flex items-center justify-center z-[3]' >
+                <Typography style={{ color: '#ffa500', zIndex: 400 }}>
+                    <ThemeProvider theme={theme}>
+                        <StaticDatePicker
+                            maxDate={today}
+                            sx={{ backgroundColor: '#001548', borderRadius: '2rem' }}
+                            onAccept={handleAccept}
+                            onClose={changeDateStateFunction}
+                        />
+                    </ThemeProvider>
+                </Typography>
+            </div>
         )
     } else {
         return (
-            <p
-                onClick={() => setOpen(true)}
-                id='date'
-                className='absolute top-[-35%] min-w-[60px] hover:bg-blue-600 left-5 text-white text-[1.04rem] border-b-[1px] 
-                    border-blue-600 hover:cursor-pointer w-[8%] text-center hover:rounded'>
-                {date.slice(0, -5)}
-            </p>
+            <div className='hidden'></div>
         )
     }
+
 
 }

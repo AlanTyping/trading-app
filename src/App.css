@@ -40,6 +40,9 @@ input[type=number] {
 
 
 @media (max-width: 600px) {
+  #date {
+  }
+
   #data-container {
     width: 90%;
     height: 56vh;
@@ -64,6 +67,7 @@ input[type=number] {
 
   #chart-form-container {
     height: 120px;
+    width: 90%;
   }
 
   #capital-form {
@@ -97,10 +101,6 @@ input[type=number] {
     font-size: 0.7rem;
     top: -15px;
     right: 10px;
-  }
-
-  #initial-form {
-    width: 95%;
   }
 
   .form {
