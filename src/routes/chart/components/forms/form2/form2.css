@@ -16,4 +16,10 @@ h4 {
     .si {
         width: 40%;
     }
+
+    #first-form-container {
+        width: 90%;
+        bottom: -180%;
+        z-index: 3;
+    }
 }

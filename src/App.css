@@ -68,37 +68,12 @@ input[type=number] {
     width: 90%;
   }
 
-  #capital-form {
-    height: 35px;
-    width: 140px;
-    font-size: 1rem;
-    position: absolute;
-    bottom: 60px;
-  }
- 
-  #chart-capital-push {
-    position: absolute;
-    width: 120px;
-    height: 30px;
-    min-height: 20px;
-    bottom: 15px;
-  }
-
   #chart-second-form {
     width: 96vw;
   }
 
   #date-selector {
     top: -70%;
-  }
-
-  #data-push {
-    height: 22px;
-    min-height: 20px;
-    width: 80px;
-    font-size: 0.7rem;
-    top: -15px;
-    right: 10px;
   }
 
   .form {
