@@ -38,24 +38,26 @@ export default function Form2() {
           <div className='h-[50%] w-[30%] mr-[3%] bg-blue-600 hover:rounded hover:bg-[#0047e1]
         flex justify-center border-b-[1px] rounded montserrat relative border-[#0047e1] items-center'
             id='data-push'>
-            <h4 className='text-[0.7rem]'>Or Attach data</h4>
+            <h4 id='attach-data' className='text-[0.7rem]'>Or Attach data</h4>
             <DataPush />
           </div>
         </div>
 
         <div className='h-[35%]  w-full flex items-center justify-center justify-evenly flex-col justify-evenly'>
-          <p className='montserrat uppercase text-[1.1rem]'>initial capital</p>
+          <p id='initial-capital-title' className='montserrat uppercase text-[1.1rem]'>initial capital</p>
+
           <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
             className='montserrat bg-[#0050ff57] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
             text-center h-[25%] w-[60%] text-[1.3rem]'
-            placeholder='${ input }' />
+            placeholder='${ input }'
+            required />
         </div>
 
         <div className='w-full h-[25%] flex flex-col items-center justify-center justify-evenly'>
           <p className='montserrat uppercase'>start date</p>
           <DateDisplay
             Class={
-              'h-[27%] w-[20%] montserrat second-form-date hover:bg-blue-600 text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center hover:rounded'
+              'h-[27%] w-[20%] montserrat second-form-date text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
             } />
         </div>
 
