@@ -30,21 +30,6 @@ export default function Carousel() {
         }}
         modules={[Mousewheel, Pagination]}
         className="mySwiper"
-        onInit={(swiper) => {
-          // Escalar el elemento central al tamaño deseado
-          const middleSlide = swiper.slides[swiper.activeIndex];
-          middleSlide.style.transform = 'scale(1)'; // Ajusta el valor según tus necesidades
-        }}
-        onSlideChange={(swiper) => {
-          // Restaurar el tamaño de los demás elementos
-          swiper.slides.forEach((slide) => {
-            slide.style.transform = 'scale(0.9)';
-          });
-  
-          // Escalar el nuevo elemento central al tamaño deseado
-          const middleSlide = swiper.slides[swiper.activeIndex];
-          middleSlide.style.transform = 'scale(1)'; // Ajusta el valor según tus necesidades
-        }}
       >
         <SwiperSlide>
           <DateDisplay
