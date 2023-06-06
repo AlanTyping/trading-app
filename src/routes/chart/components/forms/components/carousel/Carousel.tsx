@@ -16,12 +16,21 @@ import { Mousewheel, Pagination } from "swiper";
 
 export default function Carousel() {  
 
+  const handleTouchMove = (e: any) => {
+    const touchDeltaY = e.touches[0].clientY - e.touches[0].startY;
+
+    if (touchDeltaY > 0) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <>
       <Swiper
         direction={"vertical"}
         slidesPerView={2}
         spaceBetween={30}
+        onTouchMove={handleTouchMove}
         mousewheel={true}
         centeredSlides={true}
         loop={true}
@@ -33,7 +42,7 @@ export default function Carousel() {
         onInit={(swiper) => {
           // Escalar el elemento central al tamaño deseado
           const middleSlide = swiper.slides[swiper.activeIndex];
-          middleSlide.style.transform = 'scale(1.2)'; // Ajusta el valor según tus necesidades
+          middleSlide.style.transform = 'scale(1.1)'; // Ajusta el valor según tus necesidades
         }}
         onSlideChange={(swiper) => {
           // Restaurar el tamaño de los demás elementos
@@ -43,7 +52,7 @@ export default function Carousel() {
   
           // Escalar el nuevo elemento central al tamaño deseado
           const middleSlide = swiper.slides[swiper.activeIndex];
-          middleSlide.style.transform = 'scale(1.2)'; // Ajusta el valor según tus necesidades
+          middleSlide.style.transform = 'scale(1.1)'; // Ajusta el valor según tus necesidades
         }}
       >
         <SwiperSlide>
