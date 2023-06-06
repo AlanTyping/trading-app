@@ -36,6 +36,13 @@ input[type=number] {
 
 @media (max-width: 600px) {
 
+  #delete-all-files {
+    font-size: 1rem;
+    z-index: 4;
+    left: -4px;
+    right: -4px;
+  }
+
   #delete-last-file {
     background-color: #07103e;
     font-size: 0.9rem;
