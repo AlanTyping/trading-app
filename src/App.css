@@ -37,10 +37,14 @@ input[type=number] {
 @media (max-width: 600px) {
 
   #delete-all-files {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     z-index: 4;
     left: -4px;
     right: -4px;
+  }
+
+  #delete-all-files div p {
+    font-size: 1.3rem;
   }
 
   #delete-all-files div button {
@@ -50,7 +54,7 @@ input[type=number] {
 
   #delete-all-button-container {
     justify-content: space-between;
-    width: 90%;
+    width: 70%;
   }
 
   #delete-last-file {
