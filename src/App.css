@@ -37,10 +37,20 @@ input[type=number] {
 @media (max-width: 600px) {
 
   #delete-all-files {
-    font-size: 1rem;
+    font-size: 0.9rem;
     z-index: 4;
     left: -4px;
     right: -4px;
+  }
+
+  #delete-all-files div button {
+    width: 43%;
+    margin: 5px;
+  }
+
+  #delete-all-button-container {
+    justify-content: space-between;
+    width: 90%;
   }
 
   #delete-last-file {

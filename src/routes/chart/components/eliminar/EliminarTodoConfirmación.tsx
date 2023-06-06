@@ -27,7 +27,7 @@ export default function EliminarTodoConfirmación() {
       <div className='h-[50%] w-[100%] flex items-center justify-center flex-col'>
         <p>Are you sure you want to delete ALL of the files?</p>
       </div>
-      <div className='h-[50%] w-[60%] flex flex-row justify-center items-start justify-evenly'>
+      <div id="delete-all-button-container" className='h-[50%] w-[60%] flex flex-row justify-center items-start justify-evenly'>
         <button className='h-[40%] w-[30%] border-[1px] flex items-center justify-center border-[#de1212] hover:bg-[#a80000]' onClick={handleYes}>Yes</button>
         <button className='h-[40%] w-[30%] border-[1px] flex items-center justify-center border-[#0047e1] hover:bg-[#0047e1]' onClick={handleNo}>No</button>
       </div>
