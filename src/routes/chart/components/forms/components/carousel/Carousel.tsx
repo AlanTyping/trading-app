@@ -23,6 +23,7 @@ export default function Carousel() {
         slidesPerView={2}
         spaceBetween={30}
         mousewheel={true}
+        centeredSlides={true}
         loop={true}
         pagination={{
           clickable: true,
