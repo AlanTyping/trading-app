@@ -20,6 +20,7 @@ input[type=number] {
 
 @media (min-width: 1350px) {
     .chart {
+      height: 60%;
       width: 70%;
     }
 }
@@ -47,6 +48,10 @@ input[type=number] {
     width: 95%;
     min-height: 120px;
     z-index: 5;
+  }
+
+  #delete-last-file-question {
+    font-size: 1.2rem;
   }
 
   #switch {

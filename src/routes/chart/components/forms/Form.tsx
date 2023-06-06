@@ -91,7 +91,7 @@ const Form = (): JSX.Element => {
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
-          <button className='chart-submit text-white w-[80%] rounded-md 
+          <button className='chart-submit h-[90%] text-white w-[80%] rounded-md
           min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
             Submit loss
           </button>
