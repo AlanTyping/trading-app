@@ -41,6 +41,14 @@ input[type=number] {
 
 @media (max-width: 600px) {
 
+  #delete-last-file{
+    background-color: #07103e;
+    font-size: 0.9rem;
+    width: 85%;
+    min-height: 120px;
+    z-index: 5;
+  }
+
   #switch {
     height: 23px;
     width: 43px;
