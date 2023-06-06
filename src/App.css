@@ -126,6 +126,10 @@ input[type=number] {
     height: 90px;
   }
 
+  .chart-submit {
+    min-width: 130px;
+  }
+
   #delete-last-file {
     background-color: #07103e;
     width: 85%;
@@ -158,7 +162,7 @@ input[type=number] {
   }
 
   #attach-data {
-    font-size: 1rem;
+    font-size: 1 rem;
   }
 
   #date {
