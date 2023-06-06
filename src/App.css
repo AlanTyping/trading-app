@@ -41,6 +41,11 @@ input[type=number] {
 
 @media (max-width: 600px) {
 
+  #switch {
+    height: 23px;
+    width: 43px;
+  }
+
   #data-container {
     width: 90%;
     height: 56vh;
