@@ -16,21 +16,12 @@ import { Mousewheel, Pagination } from "swiper";
 
 export default function Carousel() {  
 
-  const handleTouchMove = (e: any) => {
-    const touchDeltaY = e.touches[0].clientY - e.touches[0].startY;
-
-    if (touchDeltaY > 0) {
-      e.preventDefault();
-    }
-  };
-
   return (
     <>
       <Swiper
         direction={"vertical"}
         slidesPerView={2}
         spaceBetween={30}
-        onTouchMove={handleTouchMove}
         mousewheel={true}
         centeredSlides={true}
         loop={true}
