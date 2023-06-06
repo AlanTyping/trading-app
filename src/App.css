@@ -108,3 +108,18 @@ input[type=number] {
     }
   }
 }
+
+@media (max-height: 400px) {
+  .chart {
+    width: 80%;
+    height: 80%;
+  }
+  .chart-options {
+    height: 90px;
+  }
+  #delete-last-file{
+    background-color: #07103e;
+    width: 85%;
+    z-index: 5;
+  }
+}
