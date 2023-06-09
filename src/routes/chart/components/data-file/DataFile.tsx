@@ -29,7 +29,7 @@ export default function DataFile({ capital, number, percentage, date, dolar, i }
         <p className={`${className}`}>{date.slice(0, -5)}</p>
         <p className={`${className}`}>N° {number}</p>
       </div>
-      {i === (chart.length - 1) ? (
+      {i === (chart.length - 1) ? ( 
         <EliminarDecision number={number} />
       ) : ''}
     </>
