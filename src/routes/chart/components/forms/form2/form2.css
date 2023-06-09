@@ -20,8 +20,8 @@ h4 {
     #first-form-container {
         width: 90%;
         height: 65vh;
-        min-height: 500px;
-        top: -100%;                                   
+        min-height: 480px;
+        top: -120%;                                   
         z-index: 3;
     }
 }
