@@ -26,8 +26,8 @@ export default function DataFile({ capital, number, percentage, date, dolar, i }
         <p className={`${className} ${Math.sign(percentage) === 1 ? `text-[#00afff]` : `text-[orange]`}`}>
           {Math.sign(percentage) === 1 ? `+${percentage}%` : `-${Math.abs(percentage)}%`}
         </p>
-        <p className={`${className} montserrat`}>{date.slice(0, -5)}</p>
-        <p className={`${className} montserrat`}>N° {number}</p>
+        <p className={`${className}`}>{date.slice(0, -5)}</p>
+        <p className={`${className}`}>N° {number}</p>
       </div>
       {i === (chart.length - 1) ? (
         <EliminarDecision number={number} />
