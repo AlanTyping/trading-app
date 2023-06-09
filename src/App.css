@@ -79,7 +79,6 @@ input[type=number] {
   #data-container {
     width: 90%;
     height: 56vh;
-    font-family: 'montserrat';
   }
 
   #files-container {
@@ -105,7 +104,6 @@ input[type=number] {
   }
 
   #chart-second-form {
-    font-family: 'montserrat';
     width: 96vw;
   }
 
