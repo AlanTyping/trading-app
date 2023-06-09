@@ -19,9 +19,9 @@ h4 {
 
     #first-form-container {
         width: 90%;
-        height: 65vh;
+        height: 70vh;
         min-height: 400px;
-        top: -120%;                                   
+        top: -110%;                                   
         z-index: 3;
     }
 }
