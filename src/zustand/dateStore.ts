@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { File } from '../routes/chart/interface';
-import { getDate } from '../routes/chart/functions/functions';
+import { getDate } from '../routes/chart/functions';
 
 interface dateInterface {
   date: string,

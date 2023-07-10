@@ -1,6 +1,7 @@
 import Switch from "../Switch";
 import ChartFunctionsButton from "../../../chart-functions/ChartFunctionsButton";
 import DateDisplay from "../DateDisplay";
+import DashboardButton from "../../../dashboard/DashboardButton";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,7 +15,7 @@ import "./styles.css";
 // import required modules
 import { Mousewheel, Pagination } from "swiper";
 
-export default function Carousel() {  
+export default function Carousel() {
 
   return (
     <>
@@ -54,6 +55,9 @@ export default function Carousel() {
         </SwiperSlide>
         <SwiperSlide>
           <Switch />
+        </SwiperSlide>
+        <SwiperSlide>
+          <DashboardButton />
         </SwiperSlide>
         <SwiperSlide>
           <ChartFunctionsButton />

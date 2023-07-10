@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getDolar, getPercentage, getDate, changeTrade, getCapitalByPercentage, getCapitalByDolar } from '../../functions/functions';
+import { getDolar, getPercentage, getDate, changeTrade, getCapitalByPercentage, getCapitalByDolar } from '../../functions';
 import { chartStore } from '../../../../zustand/chartStore';
 import ChartFunctions from '../chart-functions/ChartFunctions';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
@@ -13,6 +13,7 @@ const Form = (): JSX.Element => {
   const { date, setDate } = dateStore();
   const [loss, setLoss] = useState<number>(0);
   const [profit, setProfit] = useState<number>(0);
+  const [tokenizeValue, setTokenizeValue] = useState<string>("")
   let capital: number = 0;
   let dolar: number = 0;
   let percentage: number = 0;

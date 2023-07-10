@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { chartStore } from '../../../../../zustand/chartStore';
 import DataPush from '../../chart-data-management/data-push';
 import DateDisplay from '../components/DateDisplay';
@@ -8,14 +8,14 @@ import './form2.css';
 export default function Form2() {
   const chart = chartStore(i => i.files);
   const addFile = chartStore(i => i.addFile);
-  const [capital, setCapital] = useState<number>(0)
+  const [capital, setCapital] = useState<number>(0);
   const { date } = dateStore();
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCapital(Number(event.target.value));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     const item = {

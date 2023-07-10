@@ -11,11 +11,10 @@ export default function FormChange() {
     const setChart = chartStore(item => item.addFiles);
     const { dateState, changeDateState } = dateStore();
 
-
     useEffect(() => {
-        const array = localStorage.getItem('chartData');
-        if (array !== null) {
-            const parsedArray = JSON.parse(array);
+        const data: string | null = localStorage.getItem('chartData');
+        if (data) {
+            const parsedArray = JSON.parse(data);
             setChart(parsedArray);
         }
     }, [])

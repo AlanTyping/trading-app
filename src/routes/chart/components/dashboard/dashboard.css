@@ -1,0 +1,45 @@
+@media (max-width: 600px) {
+    #dashboard {
+       width: 90%;
+    }
+}
+
+.dashboardOn {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 15vh;
+    transition-timing-function: ease-out;
+    transition: height 0.8s, margin 0.8s;
+}
+
+.dashboardOff {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 0px;
+    transition-timing-function: ease-out;
+    transition: height 0.8s, margin 0.8s;
+}
+
+.textOn {
+    color: white;
+    transition-timing-function: ease-out;
+}
+
+.textOff {
+    color: rgba(255, 255, 255, 0.05);
+    visibility: hidden;
+    transition: visibility 0.4s, color 0.3s;
+    transition-timing-function: ease;
+}
+
+.top-on {
+    background-color: #00143f;
+    transition: background-color 1s, border 0.5s;
+    transition-timing-function:ease-in;
+    border-bottom: 2px solid #2563eb;
+}
+
+.top-off {
+    transition: border 0.3s;
+    border-bottom: 25px solid #061333;
+}

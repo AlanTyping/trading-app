@@ -1,6 +1,6 @@
 import { StaticDatePicker } from "@mui/x-date-pickers";
 import { ThemeProvider, createTheme, Typography } from "@mui/material";
-import { transformExistingDate } from '../../../../functions/functions';
+import { transformExistingDate } from '../../../../functions';
 import { dateStore } from '../../../../../../zustand/dateStore';
 import dayjs from 'dayjs';
 import './date.css'
