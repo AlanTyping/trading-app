@@ -5,8 +5,8 @@
 }
 
 .dashboardOn {
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 0.2%;
+    margin-bottom: 0.2%;
     height: 15vh;
     transition-timing-function: ease-out;
     transition: height 0.8s, margin 0.8s;
@@ -33,7 +33,7 @@
 }
 
 .top-on {
-    background-color: #00143f;
+    /* background-color: #00143f; */
     transition: background-color 1s, border 0.5s;
     transition-timing-function:ease-in;
     border-bottom: 2px solid #2563eb;
