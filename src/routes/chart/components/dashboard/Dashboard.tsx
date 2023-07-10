@@ -45,8 +45,8 @@ export default function Dashboard() {
           <span className={`text-[1.1rem] ${dashboardState ? `textOn text-[#ffa500]` : 'textOff'}`}>{perdidas}</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? `textOn ${Math.sign(pol) === 1 ? `text-green-600` : 'text-[orange]'}` : 'textOff'}`}>
-          {Math.sign(pol) === 1 ? `+$${pol.toFixed()}` : Math.sign(pol) === 0 ? `$${pol.toFixed()}` : `-$${pol.toFixed()}`}
+          <span className={`text-[1.1rem] ${dashboardState ? `textOn ${Math.sign(pol) === 1 ? `text-green-600` : Math.sign(pol) === 0 ? '' : 'text-[#ffa500]'}` : 'textOff'}`}>
+          {Math.sign(pol) === 1 ? `+$${pol.toFixed()}` : Math.sign(pol) === 0 ? `$${pol.toFixed()}` : `-$${Math.abs(pol).toFixed()}`}
           </span>
         </div>
       </div>
