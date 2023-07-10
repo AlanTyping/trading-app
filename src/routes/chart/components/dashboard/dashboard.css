@@ -2,6 +2,9 @@
     #dashboard {
        width: 90%;
     }
+    #dashboard-button {
+        width: 45px;
+    }
 }
 
 .dashboardOn {

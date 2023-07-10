@@ -1,5 +1,5 @@
-import React from 'react'
 import { dashboardStore } from '../../../../zustand/dashboardState';
+import { DashboardSvg } from './DashboardSvg';
 
 export default function DashboardButton() {
 
@@ -10,7 +10,12 @@ export default function DashboardButton() {
   }
 
   return (
-    <div className='bg-orange-600 h-full w-[55%] hover:cursor-pointer'
-    onClick={changeState}>a</div>
+    <div
+    id='dashboard-button'
+     className='w-[60px] h-[30px] border-[1px] border-blue-800 flex items-center
+    justify-center text-white hover:cursor-pointer rounded-md'
+    onClick={changeState}>
+      <DashboardSvg />
+    </div>
   )
 }
