@@ -54,13 +54,13 @@ export default function Carousel() {
             } />
         </SwiperSlide>
         <SwiperSlide>
+          <ChartFunctionsButton />
+        </SwiperSlide>
+        <SwiperSlide>
           <Switch />
         </SwiperSlide>
         <SwiperSlide>
           <DashboardButton />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ChartFunctionsButton />
         </SwiperSlide>
       </Swiper>
     </>

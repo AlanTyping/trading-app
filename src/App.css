@@ -137,6 +137,10 @@ input[type=number] {
       height: 60vh;
     }
   }
+
+  .initial-adjustment {
+    height: 30vh;
+  }
 }
 
 @media (max-height: 400px) {
