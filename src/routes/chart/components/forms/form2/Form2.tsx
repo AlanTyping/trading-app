@@ -57,7 +57,7 @@ export default function Form2() {
           <p className='montserrat uppercase'>start date</p>
           <DateDisplay
             Class={
-              'h-[27%] w-[20%] montserrat second-form-date text-white text-[1.04rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
+              'h-[27%] w-[22%] montserrat second-form-date text-white text-[1.4rem] border-b-[2px] border-blue-600 hover:cursor-pointer text-center'
             } />
         </div>
 

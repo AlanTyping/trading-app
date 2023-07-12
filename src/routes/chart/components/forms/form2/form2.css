@@ -17,11 +17,17 @@ h4 {
         width: 40%;
     }
 
+    #initial-capital-title {
+        font-size: 1.5rem;
+    }
+
     #first-form-container {
         width: 90%;
         height: 70vh;
-        max-height: 530px;
-        top: -110%;                                   
+        min-height: 500px;
+        max-height: 600px;
+        top: -110%;
+        font-size: 1.4rem;                      
         z-index: 3;
     }
 }
