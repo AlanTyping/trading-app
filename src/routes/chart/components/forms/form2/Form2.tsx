@@ -35,10 +35,10 @@ export default function Form2() {
       <div id='first-form-container' className='absolute bottom-0 z-[3] w-[40%] h-[450%] bg-[#00113c] border-[1px] border-blue-600 rounded-[1em] flex flex-col justify-center items-center'>
 
         <div className='h-[15%] w-full flex justify-end items-center'>
-          <div className='h-[50%] w-[30%] mr-[3%] bg-blue-600 hover:rounded hover:bg-[#0047e1]
+          <div className='h-[50%] w-[33%] mr-[3%] bg-[#1f58d5] hover:rounded hover:bg-[#0047e1]
         flex justify-center border-b-[1px] rounded montserrat relative border-[#0047e1] items-center'
             id='data-push'>
-            <h4 id='attach-data' className='text-[0.7rem]'>Or Attach data</h4>
+            <h4 id='attach-data' className='text-[0.75rem]'>Or Attach data</h4>
             <DataPush />
           </div>
         </div>
@@ -47,14 +47,14 @@ export default function Form2() {
           <p id='initial-capital-title' className='montserrat uppercase text-[1.1rem]'>initial capital</p>
 
           <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
-            className='montserrat bg-[#0050ff57] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
+            className='bg-[#00174d] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
             text-center h-[25%] w-[60%] text-[1.3rem]'
             placeholder='${ input }'
             required />
         </div>
 
         <div className='w-full h-[25%] flex flex-col items-center justify-center justify-evenly'>
-          <p className='montserrat uppercase'>start date</p>
+          <p className='montserrat uppercase'>starting date</p>
           <DateDisplay
             Class={
               'h-[27%] w-[22%] montserrat second-form-date text-white text-[1.25rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
