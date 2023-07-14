@@ -3,6 +3,7 @@ import DataView from "./components/DataView";
 import FormChange from './components/forms/FormChange';
 import Dashboard from "./components/dashboard/Dashboard";
 import { chartStore } from "../../zustand/chartStore";
+import Footer from "../../components/Footer";
 import '../../App.css';
 
 export default function Chart() {
@@ -13,6 +14,7 @@ export default function Chart() {
       {files.length > 0 ? <Dashboard /> : ''}
       <FormChange />
       {files.length > 0 ? <DataView /> : ''}
+      {files.length > 0 ? <Footer /> : ''}
     </div>
   )
 };
