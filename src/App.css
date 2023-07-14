@@ -141,6 +141,10 @@ input[type=number] {
   .initial-adjustment {
     height: 30vh;
   }
+
+  #cafecito {
+    position: relative;
+  }
 }
 
 @media (max-height: 400px) {
