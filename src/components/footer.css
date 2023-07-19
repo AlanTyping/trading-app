@@ -72,19 +72,19 @@
 
 @media (max-width: 600px) {
     #footerOn {
-        height: 50vh;
+        height: 45vh;
     }
     #footerButton {
         width: 90px;
         height: 45px;
         left: 7px;
-        top: 10px;
+        top: 5px;
     }
     .secondContentOn {
         justify-content: center;
         position: relative;
     }
     .miau {
-        bottom: -40px;
+        bottom: -20px;
     }
 }
