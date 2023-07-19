@@ -77,6 +77,14 @@
     #footerButton {
         width: 90px;
         height: 45px;
-        left: 12px;
+        left: 7px;
+        top: 10px;
+    }
+    .secondContentOn {
+        justify-content: center;
+        position: relative;
+    }
+    .miau {
+        bottom: -40px;
     }
 }
