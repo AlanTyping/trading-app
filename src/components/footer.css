@@ -48,7 +48,6 @@
     justify-content: center;
     justify-content: space-evenly;
     flex-direction: column;
-    display: flex;
     transition: display 4s;
 }
 
@@ -72,19 +71,23 @@
 
 @media (max-width: 600px) {
     #footerOn {
-        height: 45vh;
+        height: 40vh;
     }
     #footerButton {
         width: 90px;
         height: 45px;
         left: 7px;
-        top: 5px;
+        top: 10px;
     }
     .secondContentOn {
         justify-content: center;
         position: relative;
     }
     .miau {
-        bottom: -20px;
+        bottom: -15px;
+    }
+    #crypto-transfer {
+        justify-content: end;
+        height: 40%;
     }
 }
