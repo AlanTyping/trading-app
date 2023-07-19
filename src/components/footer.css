@@ -1,8 +1,20 @@
+@media (max-width: 600px) {
+    #footerOn {
+        height: 50vh;
+    }
+    #footerButton {
+        width: 20%;
+        height: 30%;
+        left: 12px;
+    }
+}
+
 #footerOff {
     position: absolute;
     bottom: -15vh;
     height: 15vh;
-    transition: background-color 1s, height 1s;
+    border-top: 1px solid orange;
+    transition: background-color 1s, height 1s, border 1s;
     transition-timing-function: ease-in-out;
 }
 
