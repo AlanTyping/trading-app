@@ -132,12 +132,6 @@ input[type=number] {
     margin-top: 24px;
   }
 
-  @media (max-height: 740px) {
-    #data-container {
-      height: 60vh;
-    }
-  }
-
   .initial-adjustment {
     height: 30vh;
   }
