@@ -26,12 +26,12 @@ export default function Footer() {
 
         <div className={footerState ? 'secondContentOn relative' : 'secondContentOff'}>
           <button onClick={changeState} id='footerButton' className={footerState ? 'top-[10%] left-10 absolute cursor-pointer rounded bg-[#061333] h-[40%] w-[7%]' : 'secondFooterTextOff'}>Back</button>
-          <h3 className={footerState ? 'secondFooterTextOn text-[1.2rem] text-[orange]' : 'secondFooterTextOff'}>crypto transfer</h3><br />
+          <h3 className={footerState ? 'secondFooterTextOn text-[1.5rem] text-[orange]' : 'secondFooterTextOff'}>crypto transfer</h3><br />
           <span id='cafecito' className={footerState ? 'secondFooterTextOn border-b-[1px] border-blue-600' : 'secondFooterTextOff'}>TMidDcT4HvZj2U1vMzwpgdpReHcahLixTt</span>
         </div>
 
         <div className={footerState ? 'secondContentOn' : 'secondContentOff'}>
-          <a id='cafecito' className={ footerState ? 'border-b-[1px] border-blue-600 secondFooterTextOn' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Buy me a coffee :D</a>
+          <a id='cafecito' className={ footerState ? 'border-b-[1px] border-blue-600 secondFooterTextOn' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Support with a coffee ☕</a>
         </div>
       </div>
     </div>
