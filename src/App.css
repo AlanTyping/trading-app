@@ -78,7 +78,7 @@ input[type=number] {
 
   #data-container {
     width: 90%;
-    height: 56vh;
+    height: 66vh;
   }
 
   #files-container {
@@ -134,7 +134,7 @@ input[type=number] {
 
   @media (max-height: 740px) {
     #data-container {
-      height: 65vh;
+      height: 60vh;
     }
   }
 
