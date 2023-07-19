@@ -7,9 +7,9 @@
 }
 
 #footerOn {
-    background-color: #1642b1;
-    border-top: 3px solid orange    ;
-    transition: background-color 1.5s, height 1s, border 1s;
+    background-color: #062872;
+    border-top: 3px solid orange;
+    transition: background-color 1.5s, height 1s, border 1s, display 3s;
     transition-timing-function: ease-in-out;
     position: absolute;
     bottom: -15vh;
@@ -34,11 +34,9 @@
 }
 
 .secondContentOff {
-    visibility: hidden;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
-    transition: visibility 1s;
 }
 
 .secondContentOn {
@@ -49,11 +47,17 @@
     justify-content: center;
     justify-content: space-evenly;
     flex-direction: column;
+    display: flex;
+    transition: display 4s;
 }
 
 .footerTextOff {
     color: #1642b1;
-    visibility: hidden;
-    transition: color 0.5s, visibility 0.5s;
+    display: none;
+    transition: color 0.5s, display 0.5s;
     transition-timing-function: ease-in-out;
+}
+
+.footerTextOn {
+
 }
