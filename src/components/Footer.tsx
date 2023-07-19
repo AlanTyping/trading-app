@@ -25,13 +25,13 @@ export default function Footer() {
 
 
         <div className={footerState ? 'secondContentOn relative' : 'secondContentOff'}>
-          <button onClick={changeState} className={footerState ? 'top-[10%] left-10 absolute cursor-pointer' : 'hidden'}>Back</button>
-          <h3 className={footerState ? 'footerTextOn text-[1.2rem] text-[orange]' : 'footerTextOff'}>crypto transfer</h3><br />
-          <span id='cafecito' className={footerState ? 'border-b-[1px] border-blue-600' : 'footerTextOff'}>TMidDcT4HvZj2U1vMzwpgdpReHcahLixTt</span>
+          <button onClick={changeState} className={footerState ? 'top-[10%] left-10 absolute cursor-pointer' : 'secondFooterTextOff'}>Back</button>
+          <h3 className={footerState ? 'secondFooterTextOn text-[1.2rem] text-[orange]' : 'secondFooterTextOff'}>crypto transfer</h3><br />
+          <span id='cafecito' className={footerState ? 'secondFooterTextOn border-b-[1px] border-blue-600' : 'secondFooterTextOff'}>TMidDcT4HvZj2U1vMzwpgdpReHcahLixTt</span>
         </div>
 
         <div className={footerState ? 'secondContentOn' : 'secondContentOff'}>
-          <a id='cafecito' className='border-b-[1px] border-blue-600' href='https://cafecito.app/alantyping' target='_blank'>Buy me a coffee :D</a>
+          <a id='cafecito' className={ footerState ? 'border-b-[1px] border-blue-600 secondFooterTextOn' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Buy me a coffee :D</a>
         </div>
       </div>
     </div>

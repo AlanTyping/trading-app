@@ -58,6 +58,13 @@
     transition-timing-function: ease-in-out;
 }
 
-.footerTextOn {
+.secondFooterTextOn {
+    display: flex;
+    visibility: visible;
+    transition: visibility 2s;
+}
 
+.secondFooterTextOff {
+    visibility: hidden;
+    transition: visibility 2s;
 }
