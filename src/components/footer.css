@@ -76,8 +76,8 @@
     #footerButton {
         width: 90px;
         height: 45px;
-        left: 7px;
-        top: 10px;
+        left: 0px;
+        top: 0px;
     }
     .secondContentOn {
         justify-content: center;
