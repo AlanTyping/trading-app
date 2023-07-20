@@ -1,3 +1,14 @@
+@keyframes colorChange {
+  0% { color: #061539; } 
+  100% { color: white; }
+}
+
+@keyframes colorChangeOrange {
+    0% { color: #061539; } 
+    100% { color: orange; }
+  }
+  
+
 #footerOff {
     position: absolute;
     bottom: -15vh;
@@ -48,7 +59,6 @@
     justify-content: center;
     justify-content: space-evenly;
     flex-direction: column;
-    transition: display 4s;
 }
 
 .footerTextOff {
@@ -60,13 +70,19 @@
 
 .secondFooterTextOn {
     display: flex;
-    visibility: visible;
-    transition: visibility 2s;
+}
+
+.animacion {
+    animation: colorChange 3s;
+}
+
+.orange-animation {
+    animation: colorChangeOrange 3s;
 }
 
 .secondFooterTextOff {
-    visibility: hidden;
-    transition: visibility 2s;
+    color: #061539;
+    transition: color 4s;
 }
 
 @media (max-width: 600px) {
