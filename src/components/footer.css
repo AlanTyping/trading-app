@@ -44,12 +44,11 @@
 #footerOn {
     background-color: #062872;
     border-top: 3px solid orange;
-    transition: background-color 1.5s, height 1s, display 3s;
+    transition: background-color 1.5s, height 1s, display 3s, border 1s;
     transition-timing-function: ease-in-out;
     position: absolute;
     bottom: -15vh;
     height: 30vh;
-    animation: orangeBorder 3s;
 }
 
 #footerDisplayOff {
@@ -112,6 +111,7 @@
 @media (max-width: 600px) {
     #footerOn {
         height: 45vh;
+        animation: orangeBorder 3s;
     }
 
     #footerButton {
