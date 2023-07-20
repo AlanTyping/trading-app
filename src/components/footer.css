@@ -1,13 +1,28 @@
-@keyframes colorChange {
-  0% { color: #061539; } 
-  100% { color: white; }
+@keyframes bordeChange {
+    0% {
+        color: #061539;
+        border-bottom: 1px solid #061539;
+    }
+
+    100% {
+        color: white;
+        border-bottom: 1px solid #2563eb;
+    }
 }
 
+
 @keyframes colorChangeOrange {
-    0% { color: #061539; } 
-    100% { color: orange; }
-  }
-  
+    0% {
+        color: #061539;
+        visibility: hidden;
+    }
+
+    100% {
+        color: orange;
+        visibility: visible;
+    }
+}
+
 
 #footerOff {
     position: absolute;
@@ -72,8 +87,8 @@
     display: flex;
 }
 
-.animacion {
-    animation: colorChange 3s;
+.animacion-borde {
+    animation: bordeChange 3s;
 }
 
 .orange-animation {
@@ -89,19 +104,23 @@
     #footerOn {
         height: 45vh;
     }
+
     #footerButton {
         width: 90px;
         height: 45px;
         left: 0px;
         top: 0px;
     }
+
     .secondContentOn {
         justify-content: center;
         position: relative;
     }
+
     .miau {
         bottom: -15px;
     }
+
     #crypto-transfer {
         justify-content: end;
         height: 40%;
