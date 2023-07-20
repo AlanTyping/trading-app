@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         <div className={footerState ? 'secondContentOn' : 'secondContentOff'}>
-          <h3 className={footerState ? 'secondFooterTextOn text-[1.2rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>Cafecito</h3>
+          <h3 className={footerState ? 'secondFooterTextOn text-[1.25rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>Cafecito</h3>
           <a className={footerState ? 'secondFooterTextOn animacion-borde border-b-[1px] border-blue-600 ' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Support with a coffee <span className='coffee'>&#9749;</span></a>
         </div>
       </div>

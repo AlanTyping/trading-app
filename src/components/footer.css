@@ -57,7 +57,18 @@
 
 .coffee {
     animation-name: coffeeAnimacion;
-    animation-duration: 8s;
+    animation-duration: 7s;
+}
+
+#footerButton:hover {
+    color: orange;
+    transition: color 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#footerButton {
+    transition: color 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 #footerOff {
