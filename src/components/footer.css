@@ -57,8 +57,7 @@
 
 .coffee {
     animation-name: coffeeAnimacion;
-    animation-duration: 3s;
-    animation-delay: 1s;
+    animation-duration: 4s;
 }
 
 #footerOff {
