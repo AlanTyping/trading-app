@@ -1,3 +1,26 @@
+@keyframes coffeeAnimacion {
+    /* 0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    } */
+
+    0% { opacity: 0; } /* El elemento estará invisible al principio (0% de la animación) */
+    100% { opacity: 1; } 
+}
+
+@keyframes animacion {
+    0% {
+        color: #061539;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
 @keyframes bordeChange {
     0% {
         color: #061539;
@@ -30,6 +53,12 @@
     100% {
         border-top: 3px solid orange;
     }
+}
+
+.coffee {
+    animation-name: coffeeAnimacion;
+    animation-duration: 3s;
+    animation-delay: 1s;
 }
 
 #footerOff {
@@ -93,6 +122,10 @@
 
 .secondFooterTextOn {
     display: flex;
+}
+
+.animacion {
+    animation: animacion 3s;
 }
 
 .animacion-borde {
