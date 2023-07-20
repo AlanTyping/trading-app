@@ -10,7 +10,6 @@
     }
 }
 
-
 @keyframes colorChangeOrange {
     0% {
         color: #061539;
@@ -23,6 +22,15 @@
     }
 }
 
+@keyframes orangeBorder {
+    0% {
+        border-top: 1px solid #061539;
+    }
+
+    100% {
+        border-top: 3px solid orange;
+    }
+}
 
 #footerOff {
     position: absolute;
@@ -36,11 +44,12 @@
 #footerOn {
     background-color: #062872;
     border-top: 3px solid orange;
-    transition: background-color 1.5s, height 1s, border 1s, display 3s;
+    transition: background-color 1.5s, height 1s, display 3s;
     transition-timing-function: ease-in-out;
     position: absolute;
     bottom: -15vh;
     height: 30vh;
+    animation: orangeBorder 3s;
 }
 
 #footerDisplayOff {
