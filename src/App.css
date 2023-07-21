@@ -18,6 +18,46 @@ input[type=number] {
   overflow-y: auto;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+/*mozilla*/
+
+* {
+  scrollbar-color: #5b73ac #122484;
+}
+
+/*Chrome body*/
+
+body::-webkit-scrollbar {
+  background-color: #062872;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4f6bac;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #687ca9;
+}
+
+/*Chrome div*/
+
+div::-webkit-scrollbar {
+  background-color: #122484;
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #4f6bac;
+  border-radius: 3px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #687ca9;
+}
 
 @media (max-width: 900px) {
   .chart {
@@ -37,6 +77,7 @@ input[type=number] {
   font-size: 96%;
 }
 
+
 @media (max-width: 600px) {
   #delete-all-files {
     font-size: 1.1rem;
@@ -48,17 +89,7 @@ input[type=number] {
   #delete-all-files div p {
     font-size: 1.3rem;
   }
-
-  #delete-all-files div button {
-    width: 43%;
-    margin: 5px;
-  }
-
-  #delete-all-button-container {
-    justify-content: space-between;
-    width: 70%;
-  }
-
+  
   #delete-last-file {
     background-color: #07103e;
     font-size: 0.9rem;
@@ -124,8 +155,8 @@ input[type=number] {
   }
 
   #chart-functions-exit {
-    left: 0px;
-    top: -5px;
+    left: 15px;
+    top: -10px;
   }
 
   #chart-functions-buttons-container {

@@ -1,12 +1,14 @@
 @media (max-width: 600px) {
     #chart-functions-exit {
-        bottom: 40%;
-        height: 30%;
-        font-size: 1.05rem;
+        top: -15px;
+        height: 25%;
+        font-size: 0.95rem;
     }
     #celu-download-button-width, #delete-files {
         min-width: 130px;
-        font-size: 1.05rem;
+        font-size: 1.03rem;
+        height: 35px;
+        margin-bottom: 35px;
     }
     #chart-functions-buttons-container {
         width: 90%;

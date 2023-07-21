@@ -1,4 +1,4 @@
-import './eliminar.css';
+import './eliminar/EliminarDecision/eliminar.css';
 export default function DataDownload() {
     const handleDownload = (e: any) => {
         e.preventDefault();
@@ -14,7 +14,7 @@ export default function DataDownload() {
 
 
     return (
-        <button id='celu-download-button-width' className='h-[40%] celu-button-width celu-font-size w-[60%] text-[1.15rem] min-w-[100px] border-blue-600 border-[1px] rounded bg-[#002e93] hover:bg-[#0047e1]' onClick={handleDownload}>
+        <button id='celu-download-button-width' className='h-[40%] celu-button-width mb-[10px] celu-font-size w-[60%] text-[1.15rem] min-w-[100px] border-blue-600 border-[1px] rounded bg-[#002e93] hover:bg-[#0047e1]' onClick={handleDownload}>
             Download
         </button>
     )
