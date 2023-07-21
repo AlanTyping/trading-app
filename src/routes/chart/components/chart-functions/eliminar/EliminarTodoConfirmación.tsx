@@ -1,6 +1,6 @@
-import { chartStore } from "../../../../zustand/chartStore";
-import { deleteAllFilesDecision } from "../../../../zustand/deleteAllFilesDecision";
-import { chartFunctionsStore } from "../../../../zustand/chartFunctionsStore";
+import { chartStore } from "../../../../../zustand/chartStore";
+import { deleteAllFilesDecision } from "../../../../../zustand/deleteAllFilesDecision";
+import { chartFunctionsStore } from "../../../../../zustand/chartFunctionsStore";
 
 export default function EliminarTodoConfirmación() {
   const chart = chartStore(item => item.files);

@@ -4,7 +4,7 @@ import { chartStore } from '../../../../zustand/chartStore';
 import ChartFunctions from '../chart-functions/ChartFunctions';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
 import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
-import EliminarTodoConfirmación from '../eliminar/EliminarTodoConfirmación';
+import EliminarTodoConfirmación from '../chart-functions/eliminar/EliminarTodoConfirmación';
 import { summaryFileDecision } from '../../../../zustand/summaryDecision';
 import { dateStore } from '../../../../zustand/dateStore';
 import Carousel from './components/carousel/Carousel';

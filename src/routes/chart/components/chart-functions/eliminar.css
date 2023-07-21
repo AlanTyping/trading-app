@@ -1,0 +1,15 @@
+@media (max-width: 600px) {
+    #chart-functions-exit {
+        bottom: 40%;
+        height: 30%;
+    }
+    .celu-font-size {
+        font-size: 0.90rem;
+    }
+    #celu-download-button-width, #delete-files {
+        min-width: 130px;
+    }
+    #chart-functions-buttons-container {
+        width: 90%;
+    }
+}

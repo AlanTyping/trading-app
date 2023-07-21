@@ -1,8 +1,8 @@
-import EliminarTodoDecision from '../eliminar/EliminarTodoDecision';
-import DataDownload from '../chart-data-management/data-download';
+import EliminarTodoDecision from './eliminar/EliminarTodoDecision';
+import DataDownload from './data-download';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
 import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
-import { ExitSvg } from './ExitSvg';
+import './eliminar.css'
 
 export default function ChartFunctions() {
   const decision = deleteAllFilesDecision(item => item.deleteDecision);
@@ -20,8 +20,8 @@ export default function ChartFunctions() {
       </div>
       <button
         id='chart-functions-exit'
-        className='h-[30%] w-[10%] min-w-[70px] absolute left-4 rounded top-2 flex items-center
-         justify-center hover:cursor-pointer hover:bg-[#0047e1] bg-[#002e93]'
+        className='h-[33%] celu-font-size w-[12%] text-[1.15rem] min-w-[70px] absolute left-4 rounded top-2 flex items-center
+         justify-center hover:cursor-pointer hover:bg-[#0033a4] bg-[#0037b0]'
         onClick={desactiveChartFunctions}>Exit</button>
     </div>
   );
