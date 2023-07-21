@@ -2,14 +2,16 @@
     #chart-functions-exit {
         bottom: 40%;
         height: 30%;
-    }
-    .celu-font-size {
-        font-size: 0.90rem;
+        font-size: 1.05rem;
     }
     #celu-download-button-width, #delete-files {
         min-width: 130px;
+        font-size: 1.05rem;
     }
     #chart-functions-buttons-container {
         width: 90%;
+    }
+    .celu-font-size {
+        font-size: 1.05rem;
     }
 }

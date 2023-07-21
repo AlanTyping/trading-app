@@ -124,8 +124,8 @@ input[type=number] {
   }
 
   #chart-functions-exit {
-    left: 8px;
-    top: 4px;
+    left: 0px;
+    top: -5px;
   }
 
   #chart-functions-buttons-container {
