@@ -10,7 +10,7 @@ export default function Footer() {
   }
 
   return (
-    <div id={footerState ? 'footerOn' : 'footerOff'} className='bg-[#061539] min-h-[100px] border-t-[1px] border-[orange] h-[13vh] w-full text-[white] flex justify-center items-center mt-[2.5%]'>
+    <div id={footerState ? 'footerOn' : 'footerOff'} className='bg-[#061539] text-[0.95rem] min-h-[90px] border-t-[1px] border-[orange] h-[12.5vh] w-full text-[white] flex justify-center items-center mt-[2.5%]'>
       <div id={footerState ? 'footerDisplayOff' : 'footerDisplayOn'}>
 
         <span className={footerState ? 'footerTextOff' : 'footerTextOn'}>Created by <a className={footerState ? 'footerTextOff' : 'text-[orange] border-b-[1px] border-blue-600'} href='https://www.instagram.com/alan_anr/' target='_blank'>Alan  </a></span>
