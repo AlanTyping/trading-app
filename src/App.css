@@ -90,14 +90,6 @@ div::-webkit-scrollbar-thumb:hover {
     font-size: 1.3rem;
   }
   
-  #delete-last-file {
-    background-color: #07103e;
-    font-size: 0.9rem;
-    width: 95%;
-    min-height: 120px;
-    z-index: 5;
-  }
-  
   #switch {
     height: 23px;
     width: 43px;
