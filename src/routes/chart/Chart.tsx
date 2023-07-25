@@ -8,6 +8,8 @@ import '../../App.css';
 
 export default function Chart() {
   const {files} = chartStore();
+
+
   return (
     <div className="w-full h-[auto] min-h-screen bg-[#061333] flex items-center flex-col relative">
       {files.length > 0 ? <LineChart /> : <div className="h-[70vh] initial-adjustment"></div>}

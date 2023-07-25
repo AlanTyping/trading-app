@@ -26,7 +26,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /*mozilla*/
 
 * {
-  scrollbar-color: #5b73ac #122484;
+  scrollbar-color: #5b73ac #003099;
 }
 
 /*Chrome body*/
@@ -97,11 +97,7 @@ div::-webkit-scrollbar-thumb:hover {
     min-height: 120px;
     z-index: 5;
   }
-
-  #delete-last-file-question {
-    font-size: 1.2rem;
-  }
-
+  
   #switch {
     height: 23px;
     width: 43px;
