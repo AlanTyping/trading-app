@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { getDolar, getPercentage, getDate, changeTrade, getCapitalByPercentage, getCapitalByDolar } from '../../functions';
-import { chartStore } from '../../../../zustand/chartStore';
-import ChartFunctions from '../chart-functions/ChartFunctions';
-import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
-import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
-import EliminarTodoConfirmación from '../chart-functions/eliminar/EliminarConfirmacion/EliminarTodoConfirmación';
-import { summaryFileDecision } from '../../../../zustand/summaryDecision';
-import { dateStore } from '../../../../zustand/dateStore';
-import Carousel from './components/carousel/Carousel';
+import { getDolar, getPercentage, getDate, changeTrade, getCapitalByPercentage, getCapitalByDolar } from '../../../functions';
+import { chartStore } from '../../../../../zustand/chartStore';
+import ChartFunctions from '../../chart-functions/ChartFunctions';
+import { chartFunctionsStore } from '../../../../../zustand/chartFunctionsStore';
+import { deleteAllFilesDecision } from '../../../../../zustand/deleteAllFilesDecision';
+import EliminarTodoConfirmación from '../../chart-functions/eliminar/EliminarConfirmacion/EliminarTodoConfirmación';
+import { summaryFileDecision } from '../../../../../zustand/summaryDecision';
+import { dateStore } from '../../../../../zustand/dateStore';
+import Carousel from '../components/carousel/Carousel';
+import './form.css';
 
 const Form = (): JSX.Element => {
   const { date, setDate } = dateStore();
@@ -92,8 +93,8 @@ const Form = (): JSX.Element => {
       <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
-          <button className='chart-submit text-white w-[80%] rounded-md
-          min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange] hover:bg-[#da8d00]'>
+          <button id='loss-button' className='chart-submit text-white w-[80%] rounded-md
+          min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange]'>
             Submit loss
           </button>
           <input step="any" type='number' onChange={lossChange}
@@ -105,8 +106,8 @@ const Form = (): JSX.Element => {
           <Carousel />
         </div>
         <form className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
-          <button className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[38px] 
-          border-[1px] border-solid border-[#0050ff] hover:bg-blue-600'>
+          <button id='profit-button' className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[38px] 
+          border-[1px] border-solid border-[#0050ff]'>
             Submit profit
           </button>
           <input step="any" type='number' onChange={profitChange}

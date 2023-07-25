@@ -1,4 +1,4 @@
-import Form from './Form'
+import Form from './form/Form'
 import Form2 from './form2/Form2'
 import { useEffect, useState } from 'react';
 import { chartStore } from '../../../../zustand/chartStore';

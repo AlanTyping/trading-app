@@ -1,0 +1,8 @@
+@media (min-width: 900px) {
+    #loss-button:hover {
+        background-color: rgb(211, 137, 0);
+    }
+    #profit-button:hover {
+        background-color: #2563eb;
+    }
+}
