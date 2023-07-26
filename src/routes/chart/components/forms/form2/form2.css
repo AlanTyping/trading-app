@@ -12,6 +12,17 @@ h4 {
 
 @media (max-width: 600px) {
 
+    #chart-capital-push {
+        height: 35%;
+        width: 50%;
+    }
+
+    #data-push {
+        right: 2%;
+        width: 37%;
+        height: 45%;
+    }
+
     .si {
         width: 40%;
     }
