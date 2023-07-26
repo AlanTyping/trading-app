@@ -31,14 +31,14 @@ export default function DateSelector() {
     if (dateState) {
         return (
             <div id="date-selector" className='absolute flex items-center justify-center z-[4] bottom-0' >
-                <Typography style={{ color: '#ffa500', zIndex: 400}}>
+                <Typography style={{ color: '#ffa500', zIndex: 400 }}>
                     <ThemeProvider theme={theme}>
-                        <StaticDatePicker
-                            maxDate={today}
-                            sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '2px solid orange' }}
-                            onAccept={handleAccept}
-                            onClose={changeDateStateFunction}
-                        />
+                            <StaticDatePicker
+                                maxDate={today}
+                                sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '2px solid orange' }}
+                                onAccept={handleAccept}
+                                onClose={changeDateStateFunction}
+                            />
                     </ThemeProvider>
                 </Typography>
             </div>

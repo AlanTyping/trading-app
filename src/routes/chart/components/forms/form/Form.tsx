@@ -90,7 +90,7 @@ const Form = (): JSX.Element => {
   return (
     <div className='w-full h-[70%] min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
-      <div className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
+      <div id='push-form-container' className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
         <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
           <button id='loss-button' className='chart-submit text-white w-[80%] rounded-md
@@ -98,11 +98,12 @@ const Form = (): JSX.Element => {
             Submit loss
           </button>
           <input step="any" type='number' onChange={lossChange}
+          id='chart-input-loss'
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'}
             required />
         </form>
-        <div className='chart-options h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center '>
+        <div id='chart-options' className='chart-options h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center '>
           <Carousel />
         </div>
         <form className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
@@ -111,6 +112,7 @@ const Form = (): JSX.Element => {
             Submit profit
           </button>
           <input step="any" type='number' onChange={profitChange}
+            id='chart-input-gain'
             className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
             border-[#0050ff] text-center'
             placeholder={decision ? '+%{ input }' : '+${ input }'}

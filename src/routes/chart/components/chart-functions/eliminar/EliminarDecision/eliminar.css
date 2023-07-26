@@ -17,3 +17,16 @@
         font-size: 1.05rem;
     }
 }
+
+@media (min-width: 1900px) {
+    #chart-functions-exit,
+    #delete-files,
+    #celu-download-button-width {
+        font-size: 1.4rem;
+    }
+
+    #chart-functions-exit {
+        left: 25px;
+        width: 10%;
+    }
+}

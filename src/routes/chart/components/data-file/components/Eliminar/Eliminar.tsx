@@ -23,14 +23,14 @@ export default function Eliminar() {
   }
 
   return (
-    <div className='w-[100%] montserrat flex flex-col items-center justify-center z-2 absolute inset-x-0 top-[-5rem] bottom-28'>
+    <div id='delete-last-file-container' className='w-[100%] montserrat flex flex-col items-center justify-center z-2 absolute inset-x-0 top-[-5rem] bottom-28'>
       <div id='delete-last-file' className='rounded flex w-[70%] min-w-[300px] bg-[#07103e] min-h-[140px] h-[50%] flex-col justify-center items-center'>
-        <div className='h-[50%] w-[100%] text-[1.5rem] flex items-start justify-center p-6'>
+        <div id='delete-last-file-title-container' className='h-[50%] w-[100%] text-[1.5rem] flex items-start justify-center p-6'>
           <p id='delete-last-file-question' className='text-center mt-[2%]'>Delete the last file on the list?</p>
         </div>
         <div id='delete-last-file-button-container' className='h-[50%] w-[60%] flex flex-row justify-center items-center justify-between'>
-          <button className='delete-last-file-button h-[50%] rounded w-[40%] border-[1px] flex items-center justify-center border-[orange] hover:bg-orange-900' onClick={handleYes}>Yes</button>
-          <button className='delete-last-file-button h-[50%] rounded w-[40%] border-[1px] flex items-center justify-center border-blue-700 hover:bg-blue-900' onClick={handleNo}>No</button>
+          <button id='delete-last-file-button-yes' className='delete-last-file-button h-[50%] rounded w-[40%] border-[1px] flex items-center justify-center border-[orange] hover:bg-orange-900' onClick={handleYes}>Yes</button>
+          <button id='delete-last-file-button-no' className='delete-last-file-button h-[50%] rounded w-[40%] border-[1px] flex items-center justify-center border-blue-700 hover:bg-blue-900' onClick={handleNo}>No</button>
         </div>
       </div>
     </div>

@@ -8,3 +8,12 @@
         height: 46%;
     }
 }
+
+@media (min-width: 1900px) {
+    #delete-all-files button {
+        font-size: 1.5rem;
+    }
+    #delete-all-files div p {
+        font-size: 1.8rem;
+    }
+}

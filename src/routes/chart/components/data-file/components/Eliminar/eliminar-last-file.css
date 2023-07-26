@@ -17,3 +17,24 @@
         width: 70%;
     }
 }
+
+@media (min-width: 1900px) {
+    #delete-last-file, #delete-last-file-question {
+        font-size: 130%;
+    }
+
+    #delete-last-file-question {
+        margin-bottom: -10px;
+    }
+
+    #delete-last-file-title-container {
+        align-items: end;
+    }
+    #delete-last-file-button-no,
+    #delete-last-file-button-yes {
+        height: 50%;
+    }
+    #delete-last-file-container {
+        height: 60%;
+    }
+}

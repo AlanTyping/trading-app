@@ -1,9 +1,9 @@
-import DataFile from './data-file/DataFile';
-import { className } from '../className/className';
-import Eliminar from './data-file/components/Eliminar/Eliminar';
-import { deleteFileDecision } from '../../../zustand/deleteFileDecision';
-import { chartStore } from '../../../zustand/chartStore';
-import { EditSvg } from './data-file/components/EditSvg';
+import DataFile from './DataFile';
+import { className } from '../../className/className';
+import Eliminar from '../data-file/components/Eliminar/Eliminar';
+import { deleteFileDecision } from '../../../../zustand/deleteFileDecision';
+import { chartStore } from '../../../../zustand/chartStore';
+import { EditSvg } from '../data-file/components/EditSvg';
 
 const DataView = (): JSX.Element => {
   const chart = chartStore(item => item.files);
@@ -11,8 +11,8 @@ const DataView = (): JSX.Element => {
 
   return (
     <div id='data-container'
-      className='w-[60%] h-[80vh] flex justify-start items-center flex-col bg-[#061333] text-white'>
-      <div className='w-[60%] w-full h-[50px] justify-evenly rounded-t-lg bg-[#041333] border-solid border-b-[1px] border-b-[2px] border-blue-600 flex items-center'>
+      className='w-[60%] h-[90vh] flex justify-start items-center flex-col bg-[#061333] text-white'>
+      <div id='operations-indication' className='w-[60%] w-full h-[50px] justify-evenly rounded-t-lg bg-[#041333] border-solid border-b-[1px] border-b-[2px] border-blue-600 flex items-center'>
         <p className={`${className}`}>Capital</p>
         <p className={`${className}`}>$</p>
         <p className={`${className}`}>%</p>

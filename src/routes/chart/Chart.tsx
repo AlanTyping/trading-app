@@ -1,5 +1,5 @@
-import LineChart from "./components/LineChart";
-import DataView from "./components/DataView";
+import LineChart from "./components/chart/LineChart";
+import DataView from "./components/data/DataView";
 import FormChange from './components/forms/FormChange';
 import Dashboard from "./components/dashboard/Dashboard";
 import { chartStore } from "../../zustand/chartStore";

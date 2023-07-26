@@ -1,0 +1,5 @@
+@media (min-width: 1900px) {
+    #data-file, #operations-indication {
+        font-size: 135%;
+    }
+}

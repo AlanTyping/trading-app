@@ -23,13 +23,13 @@ export default function Footer() {
 
         <div id='crypto-transfer' className={footerState ? 'secondContentOn' : 'secondContentOff'}>
           <button onClick={changeState} id='footerButton' className={footerState ? 'animacion top-[10%] left-[2%] absolute cursor-pointer rounded bg-[#061333] h-[20%] w-[7%]' : 'secondFooterTextOff'}>Back</button>
-          <h3 className={footerState ? 'secondFooterTextOn text-[1.55rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>crypto transfer</h3>
+          <h3 id='crypto-footer-title' className={footerState ? 'secondFooterTextOn text-[1.55rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>crypto transfer</h3>
           <p className={footerState ? 'secondFooterTextOn animacion-borde border-b-[1px] border-blue-600 miau' : 'secondFooterTextOff'}>TMidDcT4HvZj2U1vMzwpgdpReHcahLixTt</p>
         </div>
 
         <div className={footerState ? 'secondContentOn' : 'secondContentOff'}>
-          <h3 className={footerState ? 'secondFooterTextOn text-[1.25rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>Cafecito</h3>
-          <a className={footerState ? 'secondFooterTextOn animacion-borde border-b-[1px] border-blue-600 ' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Support with a coffee <span className='coffee'>&#9749;</span></a>
+          <h3 id='cafe-footer-title' className={footerState ? 'secondFooterTextOn text-[1.25rem] orange-animation text-[orange]' : 'secondFooterTextOff'}>Cafecito</h3>
+          <a id='coffee-support' className={footerState ? 'secondFooterTextOn animacion-borde border-b-[1px] border-blue-600 ' : 'secondFooterTextOff'} href='https://cafecito.app/alantyping' target='_blank'>Support with a coffee <span className='coffee'>&#9749;</span></a>
         </div>
       </div>
     </div>

@@ -46,3 +46,11 @@
     transition: border 0.3s;
     border-bottom: 25px solid #061333;
 }
+
+@media (min-width: 1900px) {
+    #dashboard div div h1,
+    #dashboard div div span
+     {
+        font-size: 1.4rem;
+    }
+}

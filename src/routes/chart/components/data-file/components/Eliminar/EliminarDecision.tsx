@@ -11,7 +11,7 @@ export default function EliminarDecision({number}: Prop) {
     return (
         <div 
         onClick={decisionTotrue}
-        className='hover:cursor-pointer w-full h-[4.5%] min-h-[23px] bg-orange-800 hover:bg-orange-600 rounded-b-lg flex items-center justify-center'>
+        className='hover:cursor-pointer w-full h-[5%] min-h-[23px] bg-orange-800 hover:bg-orange-600 rounded-b-lg flex items-center justify-center'>
             <img src={eliminar} className='h-full' />
         </div>
         

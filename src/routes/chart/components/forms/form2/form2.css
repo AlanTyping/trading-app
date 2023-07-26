@@ -11,7 +11,6 @@ h4 {
 }
 
 @media (max-width: 600px) {
-    #second-form-date {}
 
     .si {
         width: 40%;
@@ -27,7 +26,60 @@ h4 {
         min-height: 440px;
         max-height: 600px;
         top: -110%;
-        font-size: 1.4rem;                      
+        font-size: 1.4rem;
         z-index: 3;
+    }
+}
+
+
+@media (min-width: 1350px) {
+    #initial-capital-title {
+        font-size: 1.5rem;
+    }
+
+    #first-form-container {
+        font-size: 1.4rem
+    }
+
+    #capital-form {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 1900px) {
+
+    #first-form-container {
+        width: 25vw;
+        height: 70vh;
+    }
+
+    #attach-data {
+        font-size: 1.05rem;
+    }
+
+    #initial-capital-title {
+        font-size: 1.9rem;
+    }
+
+    #capital-form,
+    #first-form-container {
+        font-size: 1.8rem;
+    }
+
+    #capital-form {
+        width: 50%;
+        height: 20%
+    }
+
+    #date {
+        font-size: 1.45rem;
+        height: 40px;
+    }
+
+    #chart-capital-push {
+        font-size: 1.5rem;
+        width: 40%;
+        height: 33%;
     }
 }

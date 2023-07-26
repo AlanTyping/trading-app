@@ -6,10 +6,7 @@ export default function DateDisplay({Class}: any) {
         changeDateState(true)
     }
     return (
-        <p
-            onClick={changeStateFunction}
-            id='date'
-            className={`${Class}`}>
+        <p onClick={changeStateFunction} id='date'className={`${Class}`}>
             {date.slice(0, -5)}
         </p>
     )

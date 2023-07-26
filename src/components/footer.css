@@ -1,3 +1,6 @@
+
+
+
 @keyframes coffeeAnimacion {
     /* 0% {
         visibility: hidden;
@@ -176,5 +179,23 @@
     #crypto-transfer {
         justify-content: end;
         height: 40%;
+    }
+}
+
+@media (min-width: 1900px) {
+    #footerOff, #footerOn {
+        font-size: 133%;
+    }
+    .footer-title {
+        font-size: 160%;
+    }
+    #cafe-footer-title {
+        font-size: 130%;
+    } 
+    #crypto-footer-title {
+        font-size: 158%;
+    }
+    #coffee-support {
+        margin-bottom: 1.5%;
     }
 }

@@ -6,3 +6,21 @@
         background-color: #2563eb;
     }
 }
+
+@media (min-width: 1900px) {
+    #push-form-container {
+        font-size: 140%;
+    }
+    #chart-input-loss,
+    #chart-input-gain {
+        height: 45px;
+        font-size: 95%;
+        display: flex;
+        align-items: end;
+    }
+    #loss-button,
+    #profit-button {
+        font-size: 105%;
+        height: 60px;
+    }
+}

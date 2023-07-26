@@ -3,3 +3,9 @@
         bottom: -90%;
     }
 }
+
+@media (min-width: 1900px) {
+    #date-selector {
+        bottom: 60px;
+    }
+}

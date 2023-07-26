@@ -10,7 +10,8 @@ import {
     Legend,
     Filler,
 } from 'chart.js';
-import { chartStore } from '../../../zustand/chartStore';
+import { chartStore } from '../../../../zustand/chartStore';
+import './chart.css';
  
 ChartJS.register(
     CategoryScale,
@@ -47,14 +48,14 @@ const LineChart = (): JSX.Element => {
                 data: chart.map(e => e.capital),
                 tension: 0.1,
                 borderColor: '#2563eb',
-                pointRadius: 5,
+                pointRadius: 5
             },
         ],
     };
 
 
     return (
-        <div className='w-[100%] flex justify-center chart bg-[#061333]'>
+        <div id='chart' className='w-[100%] flex justify-center chart bg-[#061333]'>
             <Line data={midata} options={misoptions} />
         </div>
     )

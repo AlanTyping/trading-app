@@ -1,6 +1,7 @@
 import { className } from '../../className/className';
-import EliminarDecision from './components/Eliminar/EliminarDecision';
+import EliminarDecision from '../data-file/components/Eliminar/EliminarDecision';
 import { chartStore } from '../../../../zustand/chartStore';
+import './data.css';
 
 interface Prop {
   capital: number,
@@ -16,7 +17,7 @@ export default function DataFile({ capital, number, percentage, date, dolar, i }
 
   return (
     <>
-      <div id='data-file' className='w-[100%] bg-[#041333] h-[15%] min-h-[60px] relative border-b-[2px] border-[#122484] flex items-center justify-center justify-evenly'>
+      <div id='data-file' className='w-[100%] bg-[#061539] text-[95%] h-[15%] min-h-[60px] relative border-b-[2px] border-[#122484] flex items-center justify-center justify-evenly'>
         <p className={`${className} ${Math.sign(capital) === 1 ? `text-green-600` : Math.sign(capital) === 0 ? `` : `text-[orange]`}`}>
           {Math.sign(capital) === 1 ? `$${capital}` : Math.sign(capital) === 0 ? `$${capital}` : `-$${Math.abs(capital)}`}
         </p>

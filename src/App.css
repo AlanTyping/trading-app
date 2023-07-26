@@ -193,14 +193,6 @@ div::-webkit-scrollbar-thumb:hover {
     width: 55%;
   }
 
-  #initial-capital-title {
-    font-size: 1.6rem;
-  }
-
-  #capital-form {
-    font-size: 1.5rem;
-  }
-
   h4 {
     font-size: 1rem;
   }
@@ -217,10 +209,6 @@ div::-webkit-scrollbar-thumb:hover {
   .chart-input {
     font-size: 1.1rem;
     width: 40%;
-  }
-
-  #first-form-container {
-    font-size: 1.5rem
   }
 
   .chart-submit {
