@@ -49,7 +49,8 @@ h4 {
     }
 
     #first-form-container {
-        font-size: 1.4rem
+        font-size: 1.4rem;
+        max-height: 560px;
     }
 
     #capital-form {
@@ -61,8 +62,9 @@ h4 {
 @media (min-width: 1900px) {
 
     #first-form-container {
-        width: 25vw;
+        width: 22vw;
         height: 70vh;
+        max-height: 700px;
     }
 
     #attach-data {
@@ -79,7 +81,7 @@ h4 {
     }
 
     #capital-form {
-        width: 50%;
+        width: 60%;
         height: 20%
     }
 
@@ -89,8 +91,8 @@ h4 {
     }
 
     #chart-capital-push {
-        font-size: 1.5rem;
-        width: 40%;
+        font-size: 1.6rem;
+        width: 45%;
         height: 33%;
     }
 }

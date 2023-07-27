@@ -184,7 +184,10 @@
 
 @media (min-width: 1900px) {
     #footerOff, #footerOn {
-        font-size: 133%;
+        bottom: -140px;
+    }
+    #footerOn {
+        font-size: 130%;
     }
     .footer-title {
         font-size: 160%;
@@ -197,5 +200,9 @@
     }
     #coffee-support {
         margin-bottom: 1.5%;
+    }
+    #footerOff {
+        height: 140px;
+        font-size: 123%;
     }
 }

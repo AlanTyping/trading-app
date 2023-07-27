@@ -37,4 +37,7 @@
     #delete-last-file-container {
         height: 60%;
     }
+    #delete-last-file {
+        min-height: 200px;
+    }
 }
