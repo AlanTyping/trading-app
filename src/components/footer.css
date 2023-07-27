@@ -1,6 +1,3 @@
-
-
-
 @keyframes coffeeAnimacion {
     /* 0% {
         visibility: hidden;
@@ -10,8 +7,14 @@
         visibility: visible;
     } */
 
-    0% { opacity: 0; } /* El elemento estará invisible al principio (0% de la animación) */
-    100% { opacity: 1; } 
+    0% {
+        opacity: 0;
+    }
+
+    /* El elemento estará invisible al principio (0% de la animación) */
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes animacion {
@@ -155,8 +158,21 @@
 }
 
 @media (max-width: 600px) {
+    #footerOff {
+        position: absolute;
+        height: 100px;
+        border-top: 1px solid orange;
+        transition: background-color 1s, height 1s, border 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #footerOff,
     #footerOn {
-        height: 45vh;
+        bottom: -100px;
+    }
+
+    #footerOn {
+        height: 320px;
         animation: orangeBorder 3s;
     }
 
@@ -183,24 +199,32 @@
 }
 
 @media (min-width: 1900px) {
-    #footerOff, #footerOn {
+
+    #footerOff,
+    #footerOn {
         bottom: -140px;
     }
+
     #footerOn {
         font-size: 130%;
     }
+
     .footer-title {
         font-size: 160%;
     }
+
     #cafe-footer-title {
         font-size: 130%;
-    } 
+    }
+
     #crypto-footer-title {
         font-size: 158%;
     }
+
     #coffee-support {
         margin-bottom: 1.5%;
     }
+
     #footerOff {
         height: 140px;
         font-size: 123%;
