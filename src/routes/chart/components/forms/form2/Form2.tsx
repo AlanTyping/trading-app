@@ -34,7 +34,7 @@ export default function Form2() {
     <form onSubmit={handleSubmit} id='initial-form' className='w-full montserrat h-full rounded flex items-center justify-center text-white relative'>
       <div id='first-form-container' className='absolute bottom-0 z-[3] w-[40%] h-[450%] bg-[#00113c] border-[1px] border-[orange] rounded-[3%] flex flex-col justify-center items-center'>
 
-        <div className='h-[15%] w-full flex justify-end items-center'>
+        <div className='h-[15%] min-h-[32px] w-full flex justify-end items-center'>
           <div className='h-[50%] w-[33%] mr-[4.5%] bg-[#1f58d5] hover:rounded hover:bg-[#0047e1]
         flex justify-center border-b-[1px] rounded montserrat relative border-[#0047e1] items-center'
             id='data-push'>
