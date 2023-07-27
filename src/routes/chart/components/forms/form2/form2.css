@@ -12,14 +12,19 @@ h4 {
 
 @media (max-width: 600px) {
 
+    #capital-form {
+        width: 67%;
+    }
+
     #chart-capital-push {
         height: 35%;
-        width: 50%;
+        width: 55%;
+        font-size: 1.3rem;
     }
 
     #data-push {
         right: 2%;
-        width: 37%;
+        width: 40%;
         height: 45%;
     }
 
@@ -34,7 +39,7 @@ h4 {
     #first-form-container {
         width: 90%;
         height: 70vh;
-        min-height: 440px;
+        min-height: 500px;
         max-height: 600px;
         top: -110%;
         font-size: 1.4rem;
