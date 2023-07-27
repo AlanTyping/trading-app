@@ -1,10 +1,24 @@
 @media (max-width: 600px) {
-    #dashboard {
-       width: 90%;
+    .dashboardOn {
+       height: 9vh;
+       max-height: 100px;
+       background-color: #061539;
     }
+
+    #dashboard {
+        width: 100%;
+    }
+
     #dashboard-button {
         width: 45px;
     }
+    #dashboard div div h1,
+    #dashboard div div span {
+        font-size: 1rem;
+    }
+    .dashboardOff {
+        height: 0px;
+     }
 }
 
 .dashboardOn {
