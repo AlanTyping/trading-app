@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
 p,
 h4 {
     white-space: nowrap;
 
-}
-
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 600px) {

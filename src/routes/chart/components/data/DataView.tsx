@@ -13,7 +13,7 @@ const DataView = (): JSX.Element => {
   return (
     <div id='data-container'
       className='w-[60%] h-[93vh] flex justify-start items-center flex-col bg-[#061333] text-white'>
-      <div id='operations-indication' className='w-[60%] w-full h-[50px] justify-evenly rounded-t-lg bg-[#041333] border-solid border-b-[1px] border-b-[2px] border-blue-600 flex items-center'>
+      <div id='operations-indication' className='barlow w-[60%] w-full h-[50px] justify-evenly rounded-t-lg bg-[#041333] border-solid border-b-[1px] border-b-[2px] border-blue-600 flex items-center'>
         <p className={`${className}`}>Capital</p>
         <p className={`${className}`}>$</p>
         <p className={`${className}`}>%</p>

@@ -31,12 +31,12 @@ export default function Form2() {
   }
 
   return (
-    <form onSubmit={handleSubmit} id='initial-form' className='w-full montserrat h-full rounded flex items-center justify-center text-white relative'>
+    <form onSubmit={handleSubmit} id='initial-form' className='w-full barlow h-full rounded flex items-center justify-center text-white relative'>
       <div id='first-form-container' className='absolute bottom-0 z-[3] w-[40%] h-[450%] bg-[#00113c] border-[1px] border-[orange] rounded-[3%] flex flex-col justify-center items-center'>
 
         <div className='h-[15%] min-h-[32px] w-full flex justify-end items-center'>
           <div className='h-[50%] w-[33%] mr-[4.5%] bg-[#1f58d5] hover:rounded hover:bg-[#0047e1]
-        flex justify-center border-b-[1px] rounded montserrat relative border-[#0047e1] items-center'
+        flex justify-center border-b-[1px] rounded relative border-[#0047e1] items-center'
             id='data-push'>
             <h4 id='attach-data' className='text-[0.8rem]'>Or Attach data</h4>
             <DataPush />
@@ -44,7 +44,7 @@ export default function Form2() {
         </div>
 
         <div className='h-[35%]  w-full flex items-center justify-center justify-evenly flex-col justify-evenly'>
-          <p id='initial-capital-title' className='montserrat uppercase text-[1rem]'>initial capital</p>
+          <p id='initial-capital-title' className='uppercase text-[1rem]'>initial capital</p>
 
           <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
             className='bg-[#00174d] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
@@ -54,10 +54,10 @@ export default function Form2() {
         </div>
 
         <div className='w-full h-[25%] flex flex-col items-center justify-center justify-evenly'>
-          <p className='montserrat uppercase'>starting date</p>
+          <p className= 'uppercase'>starting date</p>
           <DateDisplay
             Class={
-              'h-[27%] w-[22%] montserrat second-form-date text-white text-[1.25rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
+              'h-[27%] w-[22%] second-form-date text-white text-[1.25rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
             } />
         </div>
 
