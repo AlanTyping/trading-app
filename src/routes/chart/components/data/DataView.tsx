@@ -4,6 +4,7 @@ import Eliminar from '../data-file/components/Eliminar/Eliminar';
 import { deleteFileDecision } from '../../../../zustand/deleteFileDecision';
 import { chartStore } from '../../../../zustand/chartStore';
 import { EditSvg } from '../data-file/components/EditSvg';
+import './data.css';
 
 const DataView = (): JSX.Element => {
   const chart = chartStore(item => item.files);

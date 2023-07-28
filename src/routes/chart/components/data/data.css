@@ -3,3 +3,10 @@
         font-size: 135%;
     }
 }
+
+@media (max-width: 600px) {
+    #data-container {
+        height: 85vh;
+        width: 90%;
+    }
+}

@@ -95,11 +95,6 @@ div::-webkit-scrollbar-thumb:hover {
     width: 43px;
   }
 
-  #data-container {
-    width: 90%;
-    height: 70vh;
-  }
-
   #files-container {
     font-size: 0.95rem;
     height: 47vh;
