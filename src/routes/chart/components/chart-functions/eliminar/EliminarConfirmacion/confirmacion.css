@@ -1,10 +1,10 @@
 @media (max-width: 600px) {
     #delete-all-button-container {
-        width: 70%;
+        width: 77%;
         justify-content: space-between;
     }
     #delete-all-button-container button {
-        width: 43%;
+        width: 130px;
         height: 46%;
     }
 }

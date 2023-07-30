@@ -5,9 +5,9 @@
         font-size: 0.95rem;
     }
     #celu-download-button-width, #delete-files {
-        min-width: 130px;
-        font-size: 1.03rem;
-        height: 35px;
+        min-width: 135px;
+        font-size: 1.14rem;
+        height: 37px;
         margin-bottom: 35px;
     }
     #chart-functions-buttons-container {

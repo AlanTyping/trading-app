@@ -1,0 +1,7 @@
+@media (max-width: 600px) {
+    #chart-functions-exit {
+        left: 30px;
+        top: -20px;
+        background-color: #003099;
+      }
+}

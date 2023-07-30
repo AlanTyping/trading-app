@@ -2,7 +2,8 @@ import EliminarTodoDecision from './eliminar/EliminarDecision/EliminarTodoDecisi
 import DataDownload from './data-download';
 import { chartFunctionsStore } from '../../../../zustand/chartFunctionsStore';
 import { deleteAllFilesDecision } from '../../../../zustand/deleteAllFilesDecision';
-import './eliminar/EliminarDecision/eliminar.css'
+import './eliminar/EliminarDecision/eliminar.css';
+import './chart-functions.css';
 
 export default function ChartFunctions() {
   const decision = deleteAllFilesDecision(item => item.deleteDecision);

@@ -126,11 +126,6 @@ div::-webkit-scrollbar-thumb:hover {
     height: 90px;
   }
 
-  #chart-functions-exit {
-    left: 15px;
-    top: -10px;
-  }
-
   #chart-functions-buttons-container {
     margin-top: 24px;
   }
