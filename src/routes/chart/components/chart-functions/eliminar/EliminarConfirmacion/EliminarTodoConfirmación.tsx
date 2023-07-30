@@ -23,7 +23,7 @@ export default function EliminarTodoConfirmación() {
   }
 
   return (
-    <div id="delete-all-files" className='montserrat text-white flex flex-col min-h-[160%] 
+    <div id="delete-all-files" className='barlow text-white flex flex-col min-h-[160%] 
     items-center justify-center absolute inset-x-0 bottom-[0%] top-[-43%] bg-[#061333] z-[5]'>
       <div className='h-[50%] w-[100%] flex items-center text-[1.25rem] justify-center relative'>
         <p className="absolute top-[25%]">Confirm deletion of ALL files?</p>

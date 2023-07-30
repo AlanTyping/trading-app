@@ -33,10 +33,10 @@ h4 {
     #first-form-container {
         width: 90%;
         min-width: 300px;
-        max-width: 310px;
+        max-width: 300px;
         height: 70vh;
         min-height: 450px;
-        max-height: 530px;
+        max-height: 510px;
         top: -110%;
         font-size: 1.4rem;
         z-index: 3;

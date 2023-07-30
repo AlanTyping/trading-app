@@ -9,7 +9,7 @@ export default function ChartFunctions() {
   const desactiveChartFunctions = chartFunctionsStore(item => item.deleteToFalse)
 
   return (
-    <div className='absolute montserrat inset-x-[-2%] inset-y-[-2%] bg-[#061333] z-[3] flex items-start justify-center flex-row text-white'>
+    <div className='absolute barlow inset-x-[-2%] inset-y-[-2%] bg-[#061333] z-[3] flex items-start justify-center flex-row text-white'>
       <div id='chart-functions-buttons-container' className='flex items-center mt-[13px] justify-center justify-between w-[70%] h-full'>
         <div className='h-full w-[50%] flex items-center justify-center text-white flex-col'>
           <EliminarTodoDecision />
