@@ -1,3 +1,22 @@
+@media (max-width: 600px) {
+    .chart-submit {
+        width: 130px;
+        height: 42px;
+    }
+    #chart-form-container {
+        height: 120px;
+        width: 100vw;
+        margin-top: 5px;
+    }
+    #push-form-container, #chart-second-form {
+        width: 100%;
+    }
+    .chart-input {
+        height: 30px;
+    }
+}
+
+
 @media (min-width: 900px) {
     #loss-button:hover {
         background-color: rgb(211, 137, 0);

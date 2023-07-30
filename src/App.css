@@ -77,14 +77,6 @@ div::-webkit-scrollbar-thumb:hover {
   .chart-options {
     height: 60%;
   }
-
-  #chart-form-container {
-    width: 80%;
-  }
-}
-
-.chart-submit {
-  font-size: 96%;
 }
 
 
@@ -114,21 +106,8 @@ div::-webkit-scrollbar-thumb:hover {
     width: 100px;
   }
 
-  .chart-submit {
-    width: 120px;
-  }
-
   .chart {
     height: 190px;
-  }
-
-  #chart-form-container {
-    height: 120px;
-    width: 90%;
-  }
-
-  #chart-second-form {
-    width: 96vw;
   }
 
   #date-selector {
