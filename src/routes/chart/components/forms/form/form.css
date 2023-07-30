@@ -1,4 +1,13 @@
 @media (max-width: 600px) {
+
+    #form-left {
+        margin-right: 10px
+    }
+
+    #form-right {
+        margin-left: 10px
+    }
+
     #loss-button,
     #profit-button {
         width: 130px;
@@ -17,7 +26,7 @@
     #push-form-container {
         width: 100vw;
     }
-
+ c
     .chart-input {
         height: 30px;
     }

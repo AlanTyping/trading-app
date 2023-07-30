@@ -91,7 +91,7 @@ const Form = (): JSX.Element => {
     <div className='w-full h-[70%] min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
       <div id='push-form-container' className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
-        <form onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
+        <form id='form-left' onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
           <button id='loss-button' className='chart-submit text-white w-[80%] rounded-md
           min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange]'>
@@ -106,7 +106,7 @@ const Form = (): JSX.Element => {
         <div id='chart-options' className='chart-options h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center '>
           <Carousel />
         </div>
-        <form className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
+        <form id='form-right' className='flex flex-col items-center w-full min-h-[100px] justify-evenly bg-[#061333] rounded-[10px]' onSubmit={HandleProfit}>
           <button id='profit-button' className='chart-submit text-white w-[80%] rounded-md min-w-[120px] min-h-[38px] 
           border-[1px] border-solid border-[#0050ff]'>
             Submit profit
