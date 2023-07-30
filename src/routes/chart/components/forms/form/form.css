@@ -6,12 +6,18 @@
     }
     #chart-form-container {
         height: 120px;
-        width: 106vw;
+        width: 100vw;
         margin-top: 5px;
     }
-    #push-form-container, #chart-second-form {
-        width: 101%;
+    #chart-second-form {
+        width: 100%;
+        border: none;
     }
+
+    #push-form-container {
+        width: 100vw;
+    }
+
     .chart-input {
         height: 30px;
     }
