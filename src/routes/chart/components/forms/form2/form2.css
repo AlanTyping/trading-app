@@ -32,8 +32,10 @@ h4 {
 
     #first-form-container {
         width: 90%;
+        min-width: 300px;
+        max-width: 320px;
         height: 70vh;
-        min-height: 450px;
+        min-height: 480px;
         max-height: 600px;
         top: -110%;
         font-size: 1.4rem;
@@ -42,14 +44,15 @@ h4 {
 }
 
 
-@media (min-width: 1350px) {
+@media (min-width: 600px) {
     #initial-capital-title {
         font-size: 1.5rem;
     }
 
+
     #first-form-container {
+        max-width: 340px;
         font-size: 1.4rem;
-        max-height: 560px;
     }
 
     #capital-form {
@@ -58,12 +61,12 @@ h4 {
 }
 
 
-@media (min-width: 1900px) {
+@media (min-width: 300px) and (min-height: 1000px) {
 
     #first-form-container {
-        width: 22vw;
-        height: 70vh;
-        max-height: 700px;
+        min-width: 450px;
+        width: 500px;
+        min-height: 700px;
     }
 
     #attach-data {
