@@ -1,11 +1,12 @@
 @media (max-width: 600px) {
-    .chart-submit {
+    #loss-button,
+    #profit-button {
         width: 130px;
         height: 42px;
     }
     #chart-form-container {
         height: 120px;
-        width: 100vw;
+        width: 106vw;
         margin-top: 5px;
     }
     #push-form-container, #chart-second-form {
