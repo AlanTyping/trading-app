@@ -74,17 +74,17 @@ h4 {
     }
 
     #initial-capital-title {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 
     #capital-form,
     #first-form-container {
-        font-size: 1.8rem;
+        font-size: 1.95rem;
     }
 
     #capital-form {
-        width: 60%;
-        height: 20%
+        width: 63%;
+        height: 23%
     }
 
     #date {
@@ -93,7 +93,7 @@ h4 {
     }
 
     #chart-capital-push {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         width: 45%;
         height: 33%;
     }
