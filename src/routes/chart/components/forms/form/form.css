@@ -16,7 +16,7 @@
     #chart-form-container {
         height: 120px;
         width: 100vw;
-        margin-top: 5px;
+        z-index: 10;
     }
     #chart-second-form {
         width: 100%;
