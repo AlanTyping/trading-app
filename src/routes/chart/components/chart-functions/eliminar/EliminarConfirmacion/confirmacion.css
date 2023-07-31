@@ -3,10 +3,17 @@
         width: 77%;
         font-size: 1.14rem;
         justify-content: space-between;
+        height: 55%;
     }
     #delete-all-button-container button {
         width: 130px;
         height: 46%;
+    }
+    #chart-functions-buttons-container {
+        margin-top: 20px;
+    }
+    #delete-all-files {
+        top: -38%;
     }
 }
 
