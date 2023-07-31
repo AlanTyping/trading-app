@@ -19,14 +19,14 @@
 }
 
 @media (min-width: 1900px) {
-    #chart-functions-exit,
     #delete-files,
     #celu-download-button-width {
-        font-size: 1.4rem;
+        font-size: 1.65rem;
     }
 
     #chart-functions-exit {
         left: 25px;
         width: 10%;
+        font-size: 1.5rem;
     }
 }

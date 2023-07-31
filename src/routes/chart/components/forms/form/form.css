@@ -48,14 +48,14 @@
     }
     #chart-input-loss,
     #chart-input-gain {
-        height: 45px;
-        font-size: 95%;
+        height: 50px;
+        font-size: 105%;
         display: flex;
         align-items: end;
     }
     #loss-button,
     #profit-button {
-        font-size: 105%;
+        font-size: 1.57rem;
         height: 60px;
     }
 }

@@ -24,12 +24,14 @@
 }
 
 @media (min-width: 1900px) {
-    #delete-last-file, #delete-last-file-question {
-        font-size: 130%;
-    }
 
     #delete-last-file-question {
         margin-bottom: -10px;
+        font-size: 2rem;
+    }
+
+    #delete-last-file-button-container {
+        font-size: 1.5rem;
     }
 
     #delete-last-file-title-container {
