@@ -21,7 +21,7 @@ export default function ChartFunctions() {
       </div>
       <button
         id='chart-functions-exit'
-        className='h-[33%] celu-font-size w-[11%] text-[1.15rem] min-w-[70px] absolute left-4 rounded top-2 flex items-center
+        className='h-[33%] celu-font-size w-[9%] text-[1.15rem] min-w-[70px] absolute left-4 rounded top-2 flex items-center
          justify-center hover:cursor-pointer hover:bg-[#0033a4] bg-[#0037b0]'
         onClick={desactiveChartFunctions}>Exit</button>
     </div>
