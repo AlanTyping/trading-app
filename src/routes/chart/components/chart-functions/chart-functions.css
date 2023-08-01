@@ -4,4 +4,8 @@
         top: -20px;
         background-color: #003099;
       }
+      #chart-functions-container {
+        left: 0%;
+        right: 0%;
+      }
 }

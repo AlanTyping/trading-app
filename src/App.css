@@ -81,12 +81,6 @@ div::-webkit-scrollbar-thumb:hover {
 
 
 @media (max-width: 600px) {
-  #delete-all-files {
-    font-size: 1.1rem;
-    z-index: 4;
-    left: -4px;
-    right: -4px;
-  }
 
   #delete-all-files div p {
     font-size: 1.3rem;

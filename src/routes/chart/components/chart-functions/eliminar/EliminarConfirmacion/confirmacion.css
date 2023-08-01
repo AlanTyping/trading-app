@@ -13,7 +13,11 @@
         margin-top: 20px;
     }
     #delete-all-files {
-        top: -33%;
+        top: -32%;
+        left: 0%;
+        right: 0%;
+        font-size: 1.1rem;
+        z-index: 4;
     }
 }
 
