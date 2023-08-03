@@ -61,7 +61,7 @@ h4 {
 }
 
 
-@media (min-width: 300px) and (min-height: 1000px) {
+@media (min-width: 1500px) and (min-height: 700px) {
 
     #first-form-container {
         min-width: 450px;
