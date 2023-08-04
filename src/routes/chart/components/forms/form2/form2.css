@@ -46,13 +46,16 @@ h4 {
 
 @media (min-width: 600px) {
     #initial-capital-title {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
     }
-
 
     #first-form-container {
         max-width: 340px;
         font-size: 1.4rem;
+    }
+
+    #starting-date-title {
+        font-size: 2.2rem;
     }
 
     #capital-form {
