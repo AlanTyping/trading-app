@@ -44,7 +44,7 @@ export default function Form2() {
         </div>
 
         <div className='h-[35%] w-full flex items-center justify-center justify-evenly flex-col justify-evenly'>
-          <p id='initial-capital-title'>initial capital</p>
+          <p id='initial-capital-title' >initial capital</p>
 
           <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
             className='bg-[#00174d] border-[1px] border-blue-600 rounded text-[#bfd3ff] 

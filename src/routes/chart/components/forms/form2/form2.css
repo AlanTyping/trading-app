@@ -27,7 +27,11 @@ h4 {
     }
 
     #initial-capital-title {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
+    }
+
+    #starting-date-title {
+        font-size: 1.8rem;
     }
 
     #first-form-container {
