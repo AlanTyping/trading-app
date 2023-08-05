@@ -74,6 +74,8 @@ h4 {
         min-width: 450px;
         width: 500px;
         min-height: 700px;
+        max-height: 760px;
+        border-width: 2px;
     }
 
     #attach-data {
@@ -81,7 +83,11 @@ h4 {
     }
 
     #initial-capital-title {
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+
+    #starting-date-title {
+        font-size: 2.8rem;
     }
 
     #capital-form,
@@ -95,8 +101,8 @@ h4 {
     }
 
     #date {
-        font-size: 1.45rem;
-        height: 40px;
+        font-size: 1.6rem;
+        height: 45px;
     }
 
     #chart-capital-push {
