@@ -48,7 +48,7 @@ export default function Form2() {
 
           <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
             className='bg-[#00174d] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
-            text-center h-[25%] w-[65%]'
+            text-center h-[44px] w-[65%]'
             placeholder='${ input }'
             required />
         </div>
@@ -64,7 +64,7 @@ export default function Form2() {
         <div className='w-full h-[25%] flex items-center justify-center'>
           <button
             id='chart-capital-push'
-            className='w-[50%] h-[40%] min-h-[35px] 
+            className='w-[50%] h-[50px] min-h-[35px] 
             border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
                 Submit
           </button>
