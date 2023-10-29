@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ruwudu&display=swap');
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
 @keyframes coffeeAnimacion {
     /* 0% {
         visibility: hidden;
@@ -87,7 +93,7 @@
 }
 
 #footerOn {
-    background-color: #062872;
+    background-color: #05215e;
     border-top: 3px solid orange;
     transition: background-color 1.5s, height 1s, display 3s, border 1s;
     transition-timing-function: ease-in-out;
@@ -100,7 +106,8 @@
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #footerDisplayOn {
@@ -120,8 +127,8 @@
 }
 
 .secondContentOn {
-    height: 50%;
-    width: 100%;
+    height: 80%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,7 +164,11 @@
     transition: color 4s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+    #footerDisplayOff {
+        flex-direction: column;
+    }
+
     #footerOff {
         position: absolute;
         height: 100px;
@@ -185,6 +196,8 @@
 
     .secondContentOn {
         justify-content: center;
+        width: 100%;
+        height: 50%;
         position: relative;
     }
 
@@ -213,12 +226,8 @@
         font-size: 160%;
     }
 
-    #cafe-footer-title {
-        font-size: 130%;
-    }
-
-    #crypto-footer-title {
-        font-size: 158%;
+    #crypto-footer-title, #cafe-footer-title {
+        font-size: 180%;
     }
 
     #coffee-support {

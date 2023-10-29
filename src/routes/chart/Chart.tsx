@@ -3,7 +3,7 @@ import DataView from "./components/data/DataView";
 import FormChange from './components/forms/FormChange';
 import Dashboard from "./components/dashboard/Dashboard";
 import { chartStore } from "../../zustand/chartStore";
-import Footer from "../../components/Footer";
+import Footer from "../../components/footer/Footer";
 import '../../App.css';
 
 export default function Chart() {
