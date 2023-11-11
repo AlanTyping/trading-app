@@ -16,8 +16,8 @@ export default function Footer() {
         {/* Closed footer section */}
         <span className={footerState ? 'footerTextOff' : 'footerTextOn'}>Created by <a className={footerState ? 'footerTextOff' : 'text-[orange] border-b-[1px] border-blue-600'} href='https://www.instagram.com/alan_anr/' target='_blank'>Alan  </a></span>
         <div className={footerState ? 'footerTextOff' : 'footerTextOn'}>
-          <span onClick={changeState} className={footerState ? 'footerTextOff' : 'border-b-[1px] border-blue-600 cursor-pointer footerTextOn'}>Support the development of those
-            <span className={footerState ? 'footerTextOff' : 'text-[#00a0ec] footerTextOn'}> gains</span>
+          <span onClick={changeState} className={footerState ? 'footerTextOff' : 'border-b-[1px] border-blue-600 cursor-pointer footerTextOn'}>If you find it usefull, I appreciate your
+            <span className={footerState ? 'footerTextOff' : 'text-[#00a0ec] footerTextOn'}> support</span>
           </span>
         </div>
 
