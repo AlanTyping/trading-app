@@ -16,6 +16,13 @@
     }
 }
 
+@media (min-width: 1200px) {
+    #delete-all-button-container button {
+        width: 40%;
+        height: 60%;
+    }
+}
+
 @media (min-width: 1900px) {
     #delete-all-files button {
         font-size: 1.7rem;

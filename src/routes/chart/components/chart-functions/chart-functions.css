@@ -4,3 +4,13 @@
         right: 0%;
       }
 }
+
+@media (min-width: 1200px) { 
+  #chart-functions-buttons-container div {
+    justify-content: center;
+  }
+
+  #chart-functions-exit {
+    height: 30%;
+  }
+}

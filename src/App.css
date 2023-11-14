@@ -147,7 +147,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 
-@media (min-width: 1350px) {
+@media (min-width: 1200px) {
 
   #chart-functions-button {
     height: 150%;

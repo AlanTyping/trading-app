@@ -19,7 +19,7 @@ export default function ChartFunctions() {
         Exit
       </button>
 
-      <div id='chart-functions-buttons-container' className='flex items-center mt-[13px] justify-center justify-between w-[70%] h-full'>
+      <div id='chart-functions-buttons-container' className='flex items-center mt-[13px] justify-between w-[70%] h-full'>
         <div className='h-full w-[50%] flex items-center justify-end text-white flex-col'>
           <EliminarTodoDecision />
         </div>
