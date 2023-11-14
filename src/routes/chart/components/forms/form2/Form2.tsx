@@ -33,7 +33,7 @@ export default function Form2() {
   }
 
   return (
-    <form id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
+    <form id='initial-form-container' onSubmit={handleSubmit} className='w-[85%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
 
       <div id='form-header' className='w-full p-2 flex items-center justify-center py-4 border-b-[2px] border-b-[#0047e1] bg-[#00113c]'>
         <h1 className='text-[2rem]'>trading progress</h1>
