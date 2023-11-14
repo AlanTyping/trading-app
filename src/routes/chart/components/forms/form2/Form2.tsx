@@ -35,7 +35,7 @@ export default function Form2() {
   return (
     <form id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
 
-      <div id='form-header' className='w-full p-2 flex items-center justify-center py-6 border-b-[6px] border-b-[#0047e1] bg-[#00113c]'>
+      <div id='form-header' className='w-full p-2 flex items-center justify-center py-4 border-b-[6px] border-b-[#0047e1] bg-[#00113c]'>
         <h1 className='text-[2rem]'>trading progress</h1>
       </div>
 
@@ -44,7 +44,7 @@ export default function Form2() {
         <DateSelector />
 
         <div id='push-chart-data-container' className='w-full mt-1 px-1 flex items-center justify-end'>
-          <div className='relative flex flex-center text-[0.85rem] items-center px-4 py-[0.40rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
+          <div className='relative flex flex-center text-[0.85rem] items-center px-4 py-[0.35rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
             <span>Or attach data</span>
             <DataPush />
           </div>
