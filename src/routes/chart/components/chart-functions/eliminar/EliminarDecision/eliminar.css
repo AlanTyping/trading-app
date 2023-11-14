@@ -23,6 +23,11 @@
         font-size: 1.65rem;
     }
 
+    #delete-all-files {
+        bottom: 0;
+        height: 130%;
+    }
+
     #chart-functions-exit {
         left: 25px;
         width: 10%;

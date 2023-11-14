@@ -31,8 +31,8 @@ export default function EliminarTodoConfirmación() {
       </div>
 
       <div id="delete-all-button-container" className='h-[50%] text-[1.25rem] w-[60%] flex flex-row items-start justify-around'>
-        <button id="confirmation-deletent-button" className='confirmation-button h-[55%] w-[45%] border-[1px]  flex items-center justify-center hover:cursor-pointer bg-[#ff000069] rounded hover:bg-[#ff00007d] border-red-600' onClick={handleYes}>Yes</button>
-        <button id="confirmation-delete-button" className='confirmation-button h-[55%] w-[45%] border-[1px]  flex items-center justify-center border-blue-600 rounded bg-[#002e93] hover:bg-[#0047e1]' onClick={handleNo}>No</button>
+        <button className='h-[55%] w-[45%] border-[1px]  flex items-center justify-center hover:cursor-pointer bg-[#ff000069] rounded hover:bg-[#ff00007d] border-red-600' onClick={handleYes}>Yes</button>
+        <button className='h-[55%] w-[45%] border-[1px]  flex items-center justify-center border-blue-600 rounded bg-[#002e93] hover:bg-[#0047e1]' onClick={handleNo}>No</button>
       </div>
 
     </div>

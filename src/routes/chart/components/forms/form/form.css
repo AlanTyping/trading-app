@@ -43,6 +43,13 @@
 }
 
 @media (min-width: 1900px) {
+    #chart-second-form {
+        height: 6.5vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        width: 60vw;
+    }
+
     #push-form-container {
         font-size: 140%;
     }
