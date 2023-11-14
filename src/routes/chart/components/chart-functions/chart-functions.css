@@ -1,9 +1,4 @@
 @media (max-width: 600px) {
-    #chart-functions-exit {
-        left: 30px;
-        top: -20px;
-        background-color: #003099;
-      }
       #chart-functions-container {
         left: 0%;
         right: 0%;

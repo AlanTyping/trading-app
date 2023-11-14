@@ -18,7 +18,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className={`w-[65%] flex flex-col rounded z-[3] ${dashboardState ? "dashboardOn" : 'dashboardOff'} relative`} 
+    <div className={`w-[65%] flex flex-col rounded ${dashboardState ? "dashboardOn" : 'dashboardOff'} relative`} 
     id='dashboard'>
       <div className={`flex flex-row h-[50%] w-full ${dashboardState ? 'top-on' : 'top-off'}`}>
         <div className='h-full w-[25%] flex justify-center items-center'>

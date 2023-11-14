@@ -108,10 +108,6 @@ div::-webkit-scrollbar-thumb:hover {
     height: 190px;
   }
 
-  .form {
-    height: 10vh;
-  }
-
   .header {
     height: 60px;
   }
