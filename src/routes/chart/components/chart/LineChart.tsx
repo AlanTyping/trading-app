@@ -55,8 +55,9 @@ const LineChart = (): JSX.Element => {
 
 
     return (
-        <div id='chart' className='w-[100%] flex justify-center chart bg-[#061333]'>
+        <div id='chart' className='w-[100%] flex justify-center items-center chart relative bg-[#061333]'>
             <Line data={midata} options={misoptions} />
+            {chart.length < 2 && <div className='bg-[#061333] p-3 z-10 2xl:text-[1vw] flex items-center justify-center absolute inset-x-0 inset-y-0 text-white rounded'>Record your first operaiton!</div>}
         </div>
     )
 }

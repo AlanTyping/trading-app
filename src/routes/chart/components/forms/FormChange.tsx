@@ -22,10 +22,9 @@ export default function FormChange() {
     return (
         <div 
         id='chart-form-container'
-        className='h-[17vh] min-h-[100px] flex items-center justify-center justify-evenly flex-row w-[60%] relative'>
+        className='h-[17vh] min-h-[100px] bg-slate-100 flex items-center justify-center justify-evenly flex-row w-[60%] relative'>
             <DateSelector />
-            {dateState ? '' : ''}
-            {chart.length >= 1 ? <Form /> : <Form2 />}
+            {chart.length >= 1 && <Form />}
         </div>
     )
 }

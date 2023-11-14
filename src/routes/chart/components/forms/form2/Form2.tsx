@@ -3,6 +3,8 @@ import { chartStore } from '../../../../../zustand/chartStore';
 import DataPush from '../../chart-data-management/data-push';
 import DateDisplay from '../components/DateDisplay';
 import { dateStore } from '../../../../../zustand/dateStore';
+import FormSubTitle from './components/FormSubTitle';
+import DateSelector from '../components/date-selector/DateSelector';
 import './form2.css';
 
 export default function Form2() {
@@ -31,45 +33,40 @@ export default function Form2() {
   }
 
   return (
-    <form onSubmit={handleSubmit} id='initial-form' className='w-full h-full barlow rounded flex items-center justify-center text-white relative'>
-      <div id='first-form-container' className='absolute bottom-0 z-[3] w-[40%] h-[450%] min-w-[300px] bg-[#00113c] border-[1px] border-[orange] rounded-[3%] flex flex-col justify-center items-center'>
+    <form id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
 
-        <div className='h-[15%] min-h-[32px] w-full flex justify-end items-center'>
-          <div className='h-[50%] w-[33%] mr-[4.5%] bg-[#1f58d5] hover:rounded hover:bg-[#0047e1]
-        flex justify-center border-b-[1px] rounded relative border-[#0047e1] items-center'
-            id='data-push'>
-            <h4 id='attach-data' className='text-[0.8rem]'>Or Attach data</h4>
+      <div id='form-header' className='w-full p-2 flex items-center justify-center py-6 border-b-[6px] border-b-[#0047e1] bg-[#00113c]'>
+        <h1 className='text-[1.9rem]'>trading progress</h1>
+      </div>
+
+
+      <div id='initial-form' className='p-2 items-center justify-center flex flex-col w-full'>
+        
+        <div id='push-chart-data-container' className='w-full mt-1 px-1 flex items-center justify-end'>
+          <div className='relative flex flex-center text-[0.85rem] items-center px-4 py-[0.40rem] rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
+            <span>Or attach data</span>
             <DataPush />
           </div>
         </div>
 
-        <div className='h-[35%] w-full flex items-center justify-center justify-evenly flex-col justify-evenly'>
-          <p id='initial-capital-title' >initial capital</p>
 
-          <input id='capital-form' type='number' name='numberInput' step="any" onChange={handleInputChange}
-            className='bg-[#00174d] border-[1px] border-blue-600 rounded text-[#bfd3ff] 
-            text-center h-[44px] w-[65%]'
-            placeholder='${ input }'
-            required />
-        </div>
+        <FormSubTitle title={'initial capital'} />
+        <input type='number' name='numberInput' step="any" onChange={handleInputChange}
+          className='bg-[#00174d] 2xl:text-[1.25vw] 2xl:mt-[1vw] border-[1px] border-blue-600 rounded text-[#bfd3ff] text-center py-1 mt-4 w-[60%] text-[1.3rem]'
+          placeholder='${ input }'
+          required />
 
-        <div className='w-full h-[25%] flex flex-col items-center justify-center justify-evenly'>
-          <p id='starting-date-title' >starting date</p>
-          <DateDisplay
-            Class={
-              'h-[27%] w-[22%] second-form-date text-white text-[1.35rem] border-b-[1px] border-blue-600 hover:cursor-pointer text-center'
-            } />
-        </div>
 
-        <div className='w-full h-[25%] flex items-center justify-center'>
-          <button
-            id='chart-capital-push'
-            className='w-[50%] h-[50px] min-h-[35px] 
-            border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
-                Submit
+        <FormSubTitle title={'starting date'} />
+        <DateDisplay Class={'text-white text-[1.35rem] 2xl:text-[1.3vw] border-b-[1px] border-blue-600 hover:cursor-pointer text-center mt-3'} />
+
+
+        <div className='w-full flex items-center justify-center my-8 2xl:mt-[3.5vw] 2xl:mb-[2vw] mt-14 relative'>
+          <button className='w-[50%] 2xl:text-[1.3vw] p-2 text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
+            Submit
           </button>
+          <DateSelector />
         </div>
-
       </div>
     </form>
   )

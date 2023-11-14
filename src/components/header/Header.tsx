@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div className="w-full flex items-center h-[10vh] bg-gray-900 border-b-blue-600 border-b-[0.3vh] header">
+    <div className="w-full flex items-center h-[100px] bg-[#061539] border-b-[#ffa500] border-b-[2px] 2xl:border-b-[0.15vw] header">
     </div>
   )
 }

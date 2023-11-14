@@ -1,108 +1,33 @@
-p,
-h4 {
-    white-space: nowrap;
-
-}
-
-@media (max-width: 600px) {
-
-    #capital-form {
-        width: 67%;
+@media (min-width: 1700px) {
+    #initial-form-container {
+        max-width: 1000px;
+        width: 20vw;
+    }
+    
+    #initial-form {
+        padding: 0.8vw;
     }
 
-    #chart-capital-push {
-        height: 35%;
-        width: 55%;
-        font-size: 1.3rem;
+    #form-header {
+        padding: 1.2vw;
+        border-bottom: 0.40vw solid #0047e1;
     }
 
-    #data-push {
-        right: 2%;
-        width: 40%;
-        height: 45%;
+    #form-header h1 {
+        font-size: 2.1vw;
     }
 
-    .si {
-        width: 40%;
+    #push-chart-data-container {
+        margin-right: 1vw;
     }
 
-    #initial-capital-title {
-        font-size: 1.9rem;
+    #push-chart-data-container div {
+        margin-top: 0.10vw;
+        padding-top: 0.3vw;
+        padding-bottom: 0.3vw;
     }
 
-    #starting-date-title {
-        font-size: 1.8rem;
-    }
-
-    #first-form-container {
-        width: 90%;
-        min-width: 300px;
-        max-width: 300px;
-        height: 70vh;
-        min-height: 450px;
-        max-height: 530px;
-        top: -110%;
-        font-size: 1.4rem;
-        z-index: 3;
-    }
-}
-
-
-@media (min-width: 600px) {
-    #initial-capital-title {
-        font-size: 2.3rem;
-    }
-
-    #first-form-container {
-        max-width: 340px;
-        font-size: 1.4rem;
-    }
-
-    #starting-date-title {
-        font-size: 2.2rem;
-    }
-
-    #capital-form {
-        font-size: 1.5rem;
-    }
-}
-
-
-@media (min-width: 1500px) and (min-height: 700px) {
-
-    #first-form-container {
-        min-width: 450px;
-        width: 500px;
-        min-height: 700px;
-        max-height: 760px;
-        border-width: 2px;
-    }
-
-    #attach-data {
-        font-size: 1.05rem;
-    }
-
-    #initial-capital-title {
-        font-size: 3rem;
-    }
-
-    #starting-date-title {
-        font-size: 2.8rem;
-    }
-
-    #capital-form,
-    #first-form-container {
-        font-size: 1.95rem;
-    }
-
-    #capital-form {
-        width: 63%; 
-        height: 23%
-    }
-
-    #chart-capital-push {
-        font-size: 1.8rem;
-        width: 48%;
-        height: 33%;
-    }
+    #push-chart-data-container div span {
+        font-size: 0.9vw;
+    }  
 }
