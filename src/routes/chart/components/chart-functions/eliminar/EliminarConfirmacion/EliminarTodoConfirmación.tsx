@@ -27,7 +27,7 @@ export default function EliminarTodoConfirmación() {
     items-center justify-center absolute inset-x-[-1px] bottom-[-15%] bg-[#061333] z-[5]'>
 
       <div className='h-[50%] w-[100%] flex items-center text-[1.4rem] justify-center relative'>
-        <p className="absolute top-[20%] lg:top-[10%]">Confirm deletion of ALL files?</p>
+        <p className="absolute top-[20%] lg:top-[10%] 2xl:top-0">Confirm deletion of ALL files?</p>
       </div>
 
       <div id="delete-all-button-container" className='h-[50%] text-[1.25rem] w-[60%] flex flex-row items-start justify-around'>
