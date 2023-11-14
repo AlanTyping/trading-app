@@ -62,7 +62,7 @@ export default function Form2() {
         <DateDisplay Class={'text-white text-[1.35rem] 2xl:text-[1.3vw] border-b-[1px] border-[#ffa500] hover:cursor-pointer text-center mt-3'} />
 
 
-        <div className='w-full flex items-center justify-center my-8 2xl:mt-[3.5vw] 2xl:mb-[2vw] mt-14'>
+        <div className='w-full flex items-center justify-center my-[1.8rem] 2xl:mt-[3.5vw] 2xl:mb-[2vw] mt-14'>
           <button className='w-[50%] 2xl:text-[1.3vw] p-[0.35rem] text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
             Submit
           </button>
