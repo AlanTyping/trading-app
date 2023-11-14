@@ -50,7 +50,7 @@ export default function Carousel() {
         <SwiperSlide>
           <DateDisplay
             Class={
-              'carousel-date hover:cursor-pointer w-[55%] h-[130%] text-white text-[1.04rem] border-b-[1px] border-blue-600 text-center'
+              'carousel-date 2xl:text-[1.05vw] hover:cursor-pointer w-[55%] h-[130%] text-white text-[1.04rem] border-b-[1px] border-blue-600 text-center'
             } />
         </SwiperSlide>
         <SwiperSlide>

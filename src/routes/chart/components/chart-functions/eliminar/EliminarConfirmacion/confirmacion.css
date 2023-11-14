@@ -25,11 +25,11 @@
 
 @media (min-width: 1900px) {
     #delete-all-files div p {
-        font-size: 2rem;
+        font-size: 1.6vw;
     }
 
     #delete-all-button-container button{
-        font-size: 1.4vw;
-        width: 35%;
+        font-size: 1.25vw;
+        width: 33%;
     }
 }

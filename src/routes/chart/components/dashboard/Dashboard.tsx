@@ -22,16 +22,16 @@ export default function Dashboard() {
     id='dashboard'>
       <div className={`flex flex-row h-[50%] w-full ${dashboardState ? 'top-on' : 'top-off'}`}>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <h1 className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>trades</h1>
+          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>trades</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <h1 className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>profits</h1>
+          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>profits</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <h1 className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>losses</h1>
+          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>losses</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <h1 className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>P/L</h1>
+          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>P/L</span>
         </div>
       </div>
       <div className={`h-[50%] w-full flex flex-row`}>
