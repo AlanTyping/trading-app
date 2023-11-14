@@ -35,7 +35,7 @@ export default function Form2() {
   return (
     <form id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
 
-      <div id='form-header' className='w-full p-2 flex items-center justify-center py-4 border-b-[6px] border-b-[#0047e1] bg-[#00113c]'>
+      <div id='form-header' className='w-full p-2 flex items-center justify-center py-4 border-b-[2px] border-b-[#0047e1] bg-[#00113c]'>
         <h1 className='text-[2rem]'>trading progress</h1>
       </div>
 
@@ -44,7 +44,7 @@ export default function Form2() {
         <DateSelector />
 
         <div id='push-chart-data-container' className='w-full mt-1 px-1 flex items-center justify-end'>
-          <div className='relative flex flex-center text-[0.85rem] items-center px-4 py-[0.3rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
+          <div className='relative flex flex-center text-[0.85rem] items-center px-3 py-[0.3rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
             <span>Or attach data</span>
             <DataPush />
           </div>
@@ -53,7 +53,7 @@ export default function Form2() {
 
         <FormSubTitle title={'initial capital'} />
         <input type='number' name='numberInput' step="any" onChange={handleInputChange}
-          className='bg-[#00174d] 2xl:text-[1.25vw] 2xl:mt-[1vw] border-[1px] border-blue-600 rounded text-[#bfd3ff] text-center py-1 mt-4 w-[60%] text-[1.3rem]'
+          className='bg-[#00174d] 2xl:text-[1.25vw] 2xl:mt-[1vw] border-[1px] border-blue-600 rounded text-[#bfd3ff] text-center py-1 mt-4 w-[65%] text-[1.3rem]'
           placeholder='${ input }'
           required />
 
@@ -63,7 +63,7 @@ export default function Form2() {
 
 
         <div className='w-full flex items-center justify-center my-[1.8rem] 2xl:mt-[3.5vw] 2xl:mb-[2vw] mt-14'>
-          <button className='w-[50%] 2xl:text-[1.3vw] p-[0.35rem] text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
+          <button className='w-[55%] 2xl:text-[1.3vw] p-[0.35rem] text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
             Submit
           </button>
         </div>
