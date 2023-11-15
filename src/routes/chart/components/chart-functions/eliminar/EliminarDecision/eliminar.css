@@ -24,8 +24,8 @@
     }
 
     #delete-all-files {
-        bottom: 0;
-        height: 130%;
+        bottom: -1vw;
+        height: 125%;
     }
 
     #chart-functions-exit {

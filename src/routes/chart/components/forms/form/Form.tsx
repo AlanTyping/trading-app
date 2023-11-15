@@ -9,6 +9,7 @@ import { summaryFileDecision } from '../../../../../zustand/summaryDecision';
 import { dateStore } from '../../../../../zustand/dateStore';
 import Carousel from '../components/carousel/Carousel';
 import './form.css';
+import DateSelector from '../components/date-selector/DateSelector';
 
 const Form = (): JSX.Element => {
   const { date, setDate } = dateStore();
@@ -106,8 +107,9 @@ const Form = (): JSX.Element => {
         </form>
 
 
-        <div id='chart-options' className='chart-options h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center '>
+        <div id='chart-options' className='h-[95px] w-[15%] relative min-w-[40px] flex items-center justify-center '>
           <Carousel />
+          <DateSelector />
         </div>
 
 

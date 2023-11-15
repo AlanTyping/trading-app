@@ -18,34 +18,34 @@ export default function Dashboard() {
   }
 
   return (
-    <div className={`w-[65%] flex flex-col rounded ${dashboardState ? "dashboardOn" : 'dashboardOff'} relative`} 
+    <div className={`w-[65%] text-[1.05rem] flex flex-col rounded ${dashboardState ? "dashboardOn" : 'dashboardOff'} relative`} 
     id='dashboard'>
       <div className={`flex flex-row h-[50%] w-full ${dashboardState ? 'top-on' : 'top-off'}`}>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>trades</span>
+          <span className={`${dashboardState ? "textOn" : 'textOff'}`}>trades</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>profits</span>
+          <span className={`${dashboardState ? "textOn" : 'textOff'}`}>profits</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>losses</span>
+          <span className={`${dashboardState ? "textOn" : 'textOff'}`}>losses</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>P/L</span>
+          <span className={`${dashboardState ? "textOn" : 'textOff'}`}>P/L</span>
         </div>
       </div>
       <div className={`h-[50%] w-full flex flex-row`}>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn" : 'textOff'}`}>{trades}</span>
+          <span className={`${dashboardState ? "textOn" : 'textOff'}`}>{trades}</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? "textOn text-[#00afff]" : 'textOff'}`}>{ganancias}</span>
+          <span className={`${dashboardState ? "textOn text-[#00afff]" : 'textOff'}`}>{ganancias}</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? `textOn text-[#ffa500]` : 'textOff'}`}>{perdidas}</span>
+          <span className={`${dashboardState ? `textOn text-[#ffa500]` : 'textOff'}`}>{perdidas}</span>
         </div>
         <div className='h-full w-[25%] flex justify-center items-center'>
-          <span className={`text-[1.1rem] ${dashboardState ? `textOn ${Math.sign(pol) === 1 ? `text-green-600` : Math.sign(pol) === 0 ? '' : 'text-[#ffa500]'}` : 'textOff'}`}>
+          <span className={`${dashboardState ? `textOn ${Math.sign(pol) === 1 ? `text-green-600` : Math.sign(pol) === 0 ? '' : 'text-[#ffa500]'}` : 'textOff'}`}>
           {Math.sign(pol) === 1 ? `+$${pol.toFixed()}` : Math.sign(pol) === 0 ? `$${pol.toFixed()}` : `-$${Math.abs(pol).toFixed()}`}
           </span>
         </div>

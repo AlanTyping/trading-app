@@ -1,8 +1,8 @@
   
   .swiper {
     position: absolute;
-    width: 200%;
-    height: 85%;
+    width: 210%;
+    height: 90%;
     padding: 15%;
     border-radius: 10%;
   }
@@ -24,7 +24,7 @@
 
   @media (max-width: 600px) {
     .swiper {
-      width: 210% ;
+      width: 230% ;
     }
 
     #chart-functions-button {
@@ -38,8 +38,8 @@
 
   @media (min-width: 1900px) {
     .swiper {
-      width: 180%;
-      height: 90%;
+      width: 200%;
+      height: 95%;
     }
     #chart-options {
       height: 88%;

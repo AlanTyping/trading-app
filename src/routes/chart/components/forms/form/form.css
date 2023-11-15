@@ -1,5 +1,4 @@
 @media (max-width: 600px) {
-
     #form-left {
         margin-right: 10px
     }
@@ -26,7 +25,7 @@
     #push-form-container {
         width: 100vw;
     }
- c
+
     .chart-input {
         height: 30px;
     }
@@ -34,6 +33,10 @@
 
 
 @media (min-width: 900px) {
+    #chart-second-form {
+        margin-top: 0.3vw;
+        margin-bottom: 0.3vw;
+    }
     #loss-button:hover {
         background-color: rgb(211, 137, 0);
     }
@@ -45,7 +48,7 @@
 @media (min-width: 1900px) {
     #chart-second-form {
         height: 6.5vw;
-        margin-top: 1vw;
+        margin-top: 0.3vw;
         margin-bottom: 1vw;
         width: 60vw;
     }
@@ -63,6 +66,6 @@
     #loss-button,
     #profit-button {
         font-size: 1.57rem;
-        height: 60px;
+        height: 3vw;
     }
 }
