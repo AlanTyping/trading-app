@@ -13,6 +13,7 @@ const DataView = (): JSX.Element => {
   return (
     <div id='data-container'
       className='w-[60%] h-[93vh] flex justify-start items-center flex-col bg-[#061333] text-white'>
+
       <div id='operations-indication' className='w-full h-[50px] 2xl:h-[60px] justify-evenly rounded-t-lg bg-[#041333] border-solid border-b-[2px] border-blue-600 flex items-center'>
         <p className={`${className}`}>Capital</p>
         <p className={`${className}`}>$</p>
@@ -22,6 +23,7 @@ const DataView = (): JSX.Element => {
         </div>
         <p className={`${className} mr-[5px]`}>Op</p>
       </div>
+
       <div className='w-full h-[auto] relative'>
         <div id='files-container' className='w-full bg-[#003099] rounded-b-lg'>
           {chart.map((e, i) => {

@@ -30,6 +30,7 @@ input[type=number] {
 #files-container {
   height: 55vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
