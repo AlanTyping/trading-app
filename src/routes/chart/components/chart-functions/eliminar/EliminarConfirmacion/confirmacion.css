@@ -17,9 +17,13 @@
 }
 
 @media (min-width: 1200px) {
+    #delete-all-button-container {
+        width: 72%;
+    }
+
     #delete-all-button-container button {
-        width: 40%;
-        height: 60%;
+        width: 30%;
+        height: 62%;
     }
 }
 
@@ -31,5 +35,14 @@
     #delete-all-button-container button{
         font-size: 1.25vw;
         width: 33%;
+    }
+
+    #delete-all-button-container {
+        width: 73%;
+    }
+
+    #delete-all-button-container button {
+        width: 29%;
+        height: 65%;
     }
 }
