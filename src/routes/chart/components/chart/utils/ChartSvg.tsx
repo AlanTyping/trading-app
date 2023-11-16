@@ -13,10 +13,9 @@ const icon = {
 const SvgComponent = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={60}
-    height={60}
     fill="none"
     viewBox="0 0 24 24"
+    className="h-[60px] w-[60px] lg:h-[6vw] lg:w-[6vw]"
   >
     <motion.path
       stroke="#003db9"
