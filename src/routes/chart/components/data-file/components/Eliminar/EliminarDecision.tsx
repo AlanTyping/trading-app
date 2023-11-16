@@ -7,7 +7,7 @@ export default function EliminarDecision() {
 
     return (
         <div onClick={deleteToTrue}
-            className='hover:cursor-pointer w-full h-[5%] min-h-[23px] bg-orange-800 hover:bg-orange-600 rounded-b-lg flex items-center justify-center'>
+            className='hover:cursor-pointer w-full h-[5%] min-h-[23px] rounded-b-lg flex items-center justify-center'>
             <img src={eliminar} className='h-full' />
         </div>
 
