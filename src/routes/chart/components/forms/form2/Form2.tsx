@@ -63,7 +63,7 @@ export default function Form2() {
 
 
         <div className='w-full flex items-center justify-center my-[1.8rem] 2xl:mt-[3.5vw] 2xl:mb-[2vw] mt-12'>
-          <button className='w-[55%] 2xl:text-[1.3vw] p-[0.35rem] text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
+          <button className='w-[55%] 2xl:text-[1.3vw] p-[0.4rem] text-[1.2rem] border-[1px] border-[#0047e1] rounded bg-[#002e93] hover:bg-[#0047e1]'>
             Submit
           </button>
         </div>

@@ -7,7 +7,7 @@ interface Props {
 
 const FormSubTitle = ({ title }: Props) => {
   return (
-    <h2 className='text-[1.8rem] 2xl:text-[1.9vw] 2xl:mt-[2.7vw] mt-10'>{title}</h2>
+    <h2 className='text-[1.8rem] 2xl:text-[1.9vw] 2xl:mt-[2.7vw] mt-8'>{title}</h2>
   )
 }
 
