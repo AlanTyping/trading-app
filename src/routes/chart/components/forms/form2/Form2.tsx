@@ -3,6 +3,7 @@ import { chartStore } from '../../../../../zustand/chartStore';
 import DataPush from '../../chart-data-management/data-push';
 import DateDisplay from '../components/DateDisplay';
 import { dateStore } from '../../../../../zustand/dateStore';
+import { motion } from 'framer-motion';
 import FormSubTitle from './components/FormSubTitle';
 import DateSelector from '../components/date-selector/DateSelector';
 import './form2.css';
@@ -33,7 +34,12 @@ export default function Form2() {
   }
 
   return (
-    <form id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
+    <motion.form
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+
+      id='initial-form-container' onSubmit={handleSubmit} className='w-[80%] max-w-[325px] h-[auto] barlow bg-[#051a4ed5] rounded flex flex-col items-center justify-center text-white relative'>
 
       <div id='form-header' className='w-full p-2 flex items-center justify-center py-[1.2rem] border-b-[2px] border-b-[#0047e1] bg-[#00113c]'>
         <h1 className='text-[2rem]'>trading progress</h1>
@@ -68,6 +74,6 @@ export default function Form2() {
           </button>
         </div>
       </div>
-    </form>
+    </motion.form>
   )
 }
