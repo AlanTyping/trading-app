@@ -25,7 +25,7 @@ export default function DataFile({ capital, number, percentage, date, dolar, i }
         // whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 1.1 }}
 
-        id='data-file' className='w-[100%] bg-[#061539] text-[95%] text h-[15%] min-h-[60px] relative border-b-[2px] border-[#122484] flex items-center justify-center justify-evenly'>
+        id='data-file' className='w-[100%] select-none bg-[#061539] text-[95%] text h-[15%] min-h-[60px] relative border-b-[2px] border-[#122484] flex items-center justify-center justify-evenly'>
         <p className={`${className} ${Math.sign(capital) === 1 ? `text-green-600` : Math.sign(capital) === 0 ? `` : `text-[orange]`}`}>
           {Math.sign(capital) === 1 ? `$${capital}` : Math.sign(capital) === 0 ? `$${capital}` : `-$${Math.abs(capital)}`}
         </p>
