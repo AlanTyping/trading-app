@@ -215,7 +215,7 @@
 
     #footerOff,
     #footerOn {
-        bottom: -140px;
+        bottom: -120px;
     }
 
     #footerOn {
@@ -235,7 +235,7 @@
     }
 
     #footerOff {
-        height: 140px;
-        font-size: 123%;
+        height: 120px;
+        font-size: 120%;
     }
 }
