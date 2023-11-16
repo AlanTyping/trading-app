@@ -59,8 +59,8 @@ const LineChart = (): JSX.Element => {
     <div id='chart' className='w-[100%] flex justify-center items-center relative bg-[#061333]'>
       <Line data={midata} options={misoptions} />
       {chart.length < 2 &&
-        <div className='absolute inset-y-0 bg-[#061333] inset-x-0 z-[12] flex flex-col items-center justify-center rounded-b-lg '>
-          <h2 className='z-10 2xl:text-[1vw] text-white'>Record your first operaiton!</h2>
+        <div className='absolute inset-y-0 bg-[#061333] inset-x-0 z-[12] flex flex-col items-center justify-evenly rounded-b-lg '>
+          <h2 className='z-10 2xl:text-[1vw] text-[#003db9] font-bold text-[1.5rem]'>Record your first operaiton!</h2>
           <ChartSvg />
         </div>}
     </div>
