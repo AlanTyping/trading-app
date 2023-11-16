@@ -2,6 +2,7 @@ import { StaticDatePicker } from "@mui/x-date-pickers";
 import { ThemeProvider, createTheme, Typography } from "@mui/material";
 import { transformExistingDate } from '../../../../functions';
 import { dateStore } from '../../../../../../zustand/dateStore';
+import { motion } from "framer-motion";
 import dayjs from 'dayjs';
 import './date.css'
 
@@ -30,18 +31,22 @@ export default function DateSelector() {
 
     if (dateState) {
         return (
-            <div id="date-selector" className='absolute flex items-center justify-center z-[12]' >
+            <motion.div
+                transition={{ duration: 0.25 }}
+                whileHover={{ scale: 1.05 }}
+
+                id="date-selector" className='absolute flex items-center justify-center z-[12]' >
                 <Typography style={{ color: '#ffa500', zIndex: 400 }}>
                     <ThemeProvider theme={theme}>
-                            <StaticDatePicker
-                                maxDate={today}
-                                sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '2px solid orange' }}
-                                onAccept={handleAccept}
-                                onClose={changeDateStateFunction}
-                            />
+                        <StaticDatePicker
+                            maxDate={today}
+                            sx={{ backgroundColor: '#001548', borderRadius: '1rem', border: '2px solid orange' }}
+                            onAccept={handleAccept}
+                            onClose={changeDateStateFunction}
+                        />
                     </ThemeProvider>
                 </Typography>
-            </div>
+            </motion.div>
         )
     } else {
         return (
