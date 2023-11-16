@@ -1,5 +1,4 @@
-import * as React from "react";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 const icon = {
   hidden: { pathLength: 0, opacity: 0, },
