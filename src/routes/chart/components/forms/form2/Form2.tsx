@@ -44,7 +44,7 @@ export default function Form2() {
         <DateSelector />
 
         <div id='push-chart-data-container' className='w-full mt-2 px-1 flex items-center justify-end'>
-          <div className='relative flex flex-center text-[0.85rem] items-center px-3 py-[0.3rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
+          <div className='relative flex flex-center text-[0.85rem] items-center px-3 py-[0.35rem] mr-2 rounded bg-[#0047e1] hover:rounded hover:bg-[#0047e1]'>
             <span>Or attach data</span>
             <DataPush />
           </div>
