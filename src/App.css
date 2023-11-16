@@ -74,7 +74,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-width: 900px) {
-  .chart {
+  #chart {
     height: 170px;
   }
 
@@ -104,7 +104,7 @@ div::-webkit-scrollbar-thumb:hover {
     width: 100px;
   }
 
-  .chart {
+  #chart {
     height: 190px;
   }
 
@@ -126,7 +126,7 @@ div::-webkit-scrollbar-thumb:hover {
 }
 
 @media (max-height: 400px) {
-  .chart {
+  #chart {
     width: 80%;
     height: 80%;
   }
@@ -135,7 +135,7 @@ div::-webkit-scrollbar-thumb:hover {
     height: 90px;
   }
 
-  .chart-submit {
+  #chart-submit {
     min-width: 170px;
   }
 
@@ -191,7 +191,7 @@ div::-webkit-scrollbar-thumb:hover {
     font-size: 1.1rem;
   }
 
-  .chart {
+  #chart {
     height: 63%;
     width: 69%;
   }
