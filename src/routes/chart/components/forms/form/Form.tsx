@@ -101,7 +101,7 @@ const Form = (): JSX.Element => {
           </button>
           <input step="any" type='number' onChange={lossChange}
           id='chart-input-loss'
-            className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
+            className='chart-input w-[30%] min-w-[115px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'}
             required />
         </form>
@@ -120,7 +120,7 @@ const Form = (): JSX.Element => {
           </button>
           <input step="any" type='number' onChange={profitChange}
             id='chart-input-gain'
-            className='chart-input w-[30%] min-w-[120px] border-b-[1px] text-white bg-[#061333]
+            className='chart-input w-[30%] min-w-[115px] border-b-[1px] text-white bg-[#061333]
             border-[#0050ff] text-center'
             placeholder={decision ? '+%{ input }' : '+${ input }'}
             required />
