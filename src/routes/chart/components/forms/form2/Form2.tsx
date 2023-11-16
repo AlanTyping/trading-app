@@ -53,7 +53,7 @@ export default function Form2() {
 
         <FormSubTitle title={'initial capital'} />
         <input type='number' name='numberInput' step="any" onChange={handleInputChange}
-          className='bg-[#00174d] 2xl:text-[1.25vw] 2xl:mt-[1vw] border-[1px] border-blue-600 rounded text-[#bfd3ff] text-center py-1 mt-4 w-[65%] text-[1.3rem]'
+          className='bg-[#00174d] 2xl:text-[1.25vw] 2xl:mt-[1vw] border-[1px] border-blue-600 rounded text-[#bfd3ff] text-center py-1 mt-[0.75rem] w-[65%] text-[1.3rem]'
           placeholder='${ input }'
           required />
 
