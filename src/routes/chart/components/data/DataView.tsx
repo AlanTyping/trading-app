@@ -40,8 +40,8 @@ const DataView = (): JSX.Element => {
             )
           }
           )}
-          {decision ? (<Eliminar />) : ''}
         </div>
+        {decision && <Eliminar />}
       </div>
     </div>
   )

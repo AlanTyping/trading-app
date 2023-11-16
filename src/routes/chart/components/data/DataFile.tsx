@@ -1,5 +1,7 @@
 import { className } from '../../className/className';
 import EliminarDecision from '../data-file/components/Eliminar/EliminarDecision';
+import Eliminar from '../data-file/components/Eliminar/Eliminar';
+import { deleteFileDecision } from '../../../../zustand/deleteFileDecision';
 import { chartStore } from '../../../../zustand/chartStore';
 import { motion } from 'framer-motion';
 import './data.css';
@@ -15,11 +17,11 @@ interface Prop {
 
 export default function DataFile({ capital, number, percentage, date, dolar, i }: Prop) {
   const chart = chartStore((item) => item.files);
+  const { deleteDecision } = deleteFileDecision()
 
   return (
     <>
       <motion.div
-
         // whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 1.1 }}
 
@@ -37,7 +39,7 @@ export default function DataFile({ capital, number, percentage, date, dolar, i }
         <p className={`${className}`}>N° {number}</p>
       </motion.div>
 
-      {i === (chart.length - 1) && (<EliminarDecision number={number} />)}
+      {i === (chart.length - 1) && (<EliminarDecision />)}
     </>
   )
 }

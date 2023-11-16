@@ -23,7 +23,7 @@ export default function Eliminar() {
   }
 
   return (
-    <div id='delete-last-file-container' className='w-[100%] barlow flex flex-col items-center justify-center z-2 absolute inset-x-0 top-[-5rem] bottom-28'>
+    <div id='delete-last-file-container' className='w-[100%] barlow flex flex-col items-center justify-center z-2 absolute inset-x-0 top-[-4rem] bottom-28'>
       <div id='delete-last-file' className='rounded flex w-[70%] min-w-[300px] bg-[#07103e] min-h-[140px] h-[50%] flex-col justify-center items-center'>
         <div id='delete-last-file-title-container' className='h-[50%] w-[100%] text-[1.5rem] flex items-start justify-center p-6'>
           <p id='delete-last-file-question' className='text-center mt-[2%]'>Delete the last file on the list?</p>

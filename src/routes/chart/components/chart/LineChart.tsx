@@ -70,7 +70,7 @@ const LineChart = (): JSX.Element => {
         <div className='absolute inset-y-0 bg-[#061333] inset-x-0 z-[12] flex flex-col rounded-b-lg '>
 
           <div className='h-[50%] w-full flex justify-center items-end'>
-            <motion.h2 variants={icon} initial="hidden" animate="visible" className='z-10 2xl:text-[1vw] text-[#003db9] font-bold text-[1.5rem] lg:text-[2.5vw] mb-[10px]'>Record your first trade!</motion.h2>
+            <motion.h2 variants={icon} initial="hidden" animate="visible" className='z-10 text-[#003db9] font-bold text-[1.5rem] lg:text-[2.5vw] mb-[10px]'>Record your first trade!</motion.h2>
           </div>
 
           <div className='h-[50%] w-full flex justify-center items-center'>
