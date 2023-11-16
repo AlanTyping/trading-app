@@ -1,3 +1,9 @@
+@media (max-width: 700px) {
+    #initial-form-container {
+        margin-bottom: 150px;
+    }
+}
+
 @media (min-width: 1700px) {
     #initial-form-container {
         max-width: 1000px;
