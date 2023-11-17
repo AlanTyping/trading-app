@@ -32,11 +32,11 @@ export default function DateSelector() {
     if (dateState) {
         return (
             <motion.div
-                transition={{ duration: 0.3 }}
-                initial={{  scale: 'var(--scale-from)' }}
-                animate={{  scale: 'var(--scale-to)' }}
+                transition={{ duration: 0.25 }}
+                initial={{ scale: 'var(--scale-from)' }}
+                animate={{ scale: 'var(--scale-to)' }}
 
-                id="date-selector" className='absolute 2xl:[--scale-from:100%] 2xl:[--scale-to:115%] flex items-center justify-center z-[12]' >
+                id="date-selector" className='absolute 2xl:[--scale-from:100%] lg:mb-[8vw] 2xl:[--scale-to:125%] flex items-center justify-center z-[12]' >
                 <Typography style={{ color: '#ffa500', zIndex: 400 }}>
                     <ThemeProvider theme={theme}>
                         <StaticDatePicker
