@@ -27,19 +27,18 @@ const Form = (): JSX.Element => {
   const chartOprionsAviable = chartFunctionsStore(i => i.chartFunctions);
 
   const profitChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    setProfit(Number(value));
+    setProfit(Number(event.target.value));
   };
 
   const lossChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const value = event.target.value;
-    setLoss(Number(value));
+    setLoss(Number(event.target.value));
   };
 
   const HandleProfit = (e: any) => {
     e.preventDefault();
 
-    if (!decision) {
+    if (typeof profit === 'number' && profit) {
+      if (!decision) {
       dolar = Math.abs(profit);
       capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
       percentage = getPercentage(chart[chart.length - 1].capital, dolar);
@@ -60,12 +59,17 @@ const Form = (): JSX.Element => {
     addFile(file);
     const newData = [...chart, file];
     localStorage.setItem('chartData', JSON.stringify(newData));
+    } else {
+      alert("Input must be a number.")
+    }
   };
 
   const HandleLoss = (e: any) => {
     e.preventDefault();
 
-    if (!decision) {
+    if (typeof loss === 'number' && loss) {
+      console.log(loss)
+      if (!decision) {
       dolar = (loss < 0 ? loss : -loss);
       capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
       percentage = getPercentage(chart[chart.length - 1].capital, dolar);
@@ -86,6 +90,9 @@ const Form = (): JSX.Element => {
     addFile(file);
     const newData = [...chart, file];
     localStorage.setItem('chartData', JSON.stringify(newData));
+    } else {
+      alert("Input must be a number.")
+    }
   }
 
   return (
@@ -99,7 +106,7 @@ const Form = (): JSX.Element => {
           min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange]'>
             Submit loss
           </button>
-          <input step="any" type='number' onChange={lossChange}
+          <input step="any" type='text' onChange={lossChange}
           id='chart-input-loss'
             className='chart-input w-[30%] min-w-[115px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'}
