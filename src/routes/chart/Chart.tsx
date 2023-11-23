@@ -12,7 +12,8 @@ import '../../App.css';
 
 export default function Chart() {
   const { files, addFiles } = chartStore();
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState<boolean>(false)
+  const [fiumba, setFiumba] = useState<string>("")
 
   useEffect(() => {
     const data: string | null = localStorage.getItem('chartData');
@@ -61,4 +62,3 @@ export default function Chart() {
     </div>
   )
 };
-
