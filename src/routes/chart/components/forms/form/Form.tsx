@@ -37,77 +37,84 @@ const Form = (): JSX.Element => {
   const HandleProfit = (e: any) => {
     e.preventDefault();
 
-    if (typeof profit === 'number' && profit) {
-      if (!decision) {
-      dolar = Math.abs(profit);
-      capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
-      percentage = getPercentage(chart[chart.length - 1].capital, dolar);
-    } else {
-      percentage = Math.abs(profit);
-      capital = getCapitalByPercentage(chart[chart.length - 1].capital, profit);
-      dolar = getDolar(chart[chart.length - 1].capital, profit);
-    }
+    try {
+      if (typeof profit === 'number' || profit === 0) {
+        if (profit) {
+          if (!decision) {
+            dolar = Math.abs(profit);
+            capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
+            percentage = getPercentage(chart[chart.length - 1].capital, dolar);
+          } else {
+            percentage = Math.abs(profit);
+            capital = getCapitalByPercentage(chart[chart.length - 1].capital, profit);
+            dolar = getDolar(chart[chart.length - 1].capital, profit);
+          }
 
-    const file = {
-      capital: capital,
-      percentage: percentage,
-      dolar: dolar,
-      number: chart[chart.length - 1].number + 1,
-      date: date
-    }
+          const file = {
+            capital: capital,
+            percentage: percentage,
+            dolar: dolar,
+            number: chart[chart.length - 1].number + 1,
+            date: date
+          }
 
-    addFile(file);
-    const newData = [...chart, file];
-    localStorage.setItem('chartData', JSON.stringify(newData));
-    } else {
-      alert("Input must be a number.")
+          addFile(file);
+          const newData = [...chart, file];
+          localStorage.setItem('chartData', JSON.stringify(newData));
+        }
+      }
+    } catch (err) {
+      return
     }
   };
 
   const HandleLoss = (e: any) => {
     e.preventDefault();
+    try {
+      if (typeof loss === 'number' || loss === 0) {
+        if (loss) {
+          if (!decision) {
+            dolar = (loss < 0 ? loss : -loss);
+            capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
+            percentage = getPercentage(chart[chart.length - 1].capital, dolar);
+          } else {
+            percentage = -loss;
+            capital = getCapitalByPercentage(chart[chart.length - 1].capital, percentage);
+            dolar = getDolar(chart[chart.length - 1].capital, percentage);
+          }
 
-    if (typeof loss === 'number' && loss) {
-      console.log(loss)
-      if (!decision) {
-      dolar = (loss < 0 ? loss : -loss);
-      capital = getCapitalByDolar(chart[chart.length - 1].capital, dolar);
-      percentage = getPercentage(chart[chart.length - 1].capital, dolar);
-    } else {
-      percentage = -loss;
-      capital = getCapitalByPercentage(chart[chart.length - 1].capital, percentage);
-      dolar = getDolar(chart[chart.length - 1].capital, percentage);
+          const file = {
+            capital: capital,
+            percentage: percentage,
+            dolar: dolar,
+            number: chart[chart.length - 1].number + 1,
+            date: date
+          }
+
+          addFile(file);
+          const newData = [...chart, file];
+          localStorage.setItem('chartData', JSON.stringify(newData));
+        }
+      }
+    } catch (err) {
+      return
     }
 
-    const file = {
-      capital: capital,
-      percentage: percentage,
-      dolar: dolar,
-      number: chart[chart.length - 1].number + 1,
-      date: date
-    }
-
-    addFile(file);
-    const newData = [...chart, file];
-    localStorage.setItem('chartData', JSON.stringify(newData));
-    } else {
-      alert("Input must be a number.")
-    }
   }
 
   return (
     <div className='w-full h-[70%] sm:w-[63%] min-h-[90px] form flex items-center justify-center relative 
     border-r-[1px] border-l-[1px] border-r-[#0050ff] border-l-[orange]' id='chart-second-form'>
       <div id='push-form-container' className='min-w-[360px] h-full flex items-center justify-center justify-evenly flex-row w-[100%]'>
-     
+
         <form id='form-left' onSubmit={HandleLoss} className='flex flex-col items-center w-full min-h-[100px] justify-evenly
         rounded-[10px] bg-[#061333]'>
           <button id='loss-button' className='chart-submit text-white w-[80%] rounded-md
           min-w-[120px] min-h-[38px] border-[1px] border-solid border-[orange]'>
             Submit loss
           </button>
-          <input step="any" type='text' onChange={lossChange}
-          id='chart-input-loss'
+          <input step="any" type='number' onChange={lossChange}
+            id='chart-input-loss'
             className='chart-input w-[30%] min-w-[115px] border-b-[1px] text-white border-solid bg-[#061333] border-[orange] text-center'
             placeholder={decision ? '-%{ input }' : '-${ input }'}
             required />
@@ -132,7 +139,7 @@ const Form = (): JSX.Element => {
             placeholder={decision ? '+%{ input }' : '+${ input }'}
             required />
         </form>
-        
+
       </div>
       {chartOprionsAviable ? <ChartFunctions /> : ''}
       {deleteDecision ? <EliminarTodoConfirmación /> : ''}

@@ -20,20 +20,22 @@ export default function Form2() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    if (typeof capital === 'number' && capital) {
-      const item = {
-        capital: capital,
-        percentage: 0,
-        dolar: 0,
-        number: 0,
-        date: date
-      }
+    try {
+      if (typeof capital === 'number' || capital === 0) {
+        if (capital) {
+          const item = {
+            capital: capital,
+            percentage: 0,
+            dolar: 0,
+            number: 0,
+            date: date
+          }
 
-      addFile(item);
-      localStorage.setItem('chartData', JSON.stringify([item]));
-    } else {
-      alert("Input must be a number.")
-    }
+          addFile(item);
+          localStorage.setItem('chartData', JSON.stringify([item]));
+        }
+      }
+    } catch (err) {return}
   }
 
   return (
