@@ -22,7 +22,8 @@ export default function Form2() {
     e.preventDefault();
     try {
       if (typeof capital === 'number' || capital === 0) {
-        if (capital) {
+
+          console.log(capital)
           const item = {
             capital: capital,
             percentage: 0,
@@ -33,7 +34,6 @@ export default function Form2() {
 
           addFile(item);
           localStorage.setItem('chartData', JSON.stringify([item]));
-        }
       }
     } catch (err) {return}
   }
